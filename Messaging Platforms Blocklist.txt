@@ -1,0 +1,58 @@
+! AdGuard Home - Messaging Platforms Blocklist (Strict)
+! Updated and categorized by Coly & ChatGPT - 2025-08-24
+! Purpose: Disable consumer messaging platforms at DNS level (excluding WhatsApp/Telegram which have dedicated strict files)
+
+! === Scope & Notes ===
+! - WhatsApp: will be maintained in its own strict file (not listed here).
+! - Telegram: will be maintained in its own strict file (not listed here).
+! - Facebook Messenger: managed under Social Media filters (not listed here).
+! - Discord: centralized in "Discord Filter.txt".
+! - Snapchat / TikTok / Instagram: centralized in Social Media filters.
+! - All rules include $important as per MindFence policy.
+
+! === Signal (Core, CDN) ===
+||signal.org^$important
+||cdn.signal.org^$important
+
+! === WeChat / Weixin (Core + Primary Web Endpoints) ===
+||wechat.com^$important
+||weixin.qq.com^$important
+||wx.qq.com^$important
+
+! === Viber ===
+||viber.com^$important
+||viber.me^$important
+
+! === LINE (Apps, CDN) ===
+||line.me^$important
+||line-apps.com^$important
+||line-scdn.net^$important
+
+! === Kik ===
+||kik.com^$important
+
+! === Element / Matrix ===
+||element.io^$important
+||matrix.org^$important
+
+! === Wire ===
+||wire.com^$important
+
+! === Threema ===
+||threema.ch^$important
+
+! === ICQ / VK Messaging (Core endpoints) ===
+||icq.com^$important
+||vk.me^$important
+||vk.com^$important
+
+! === OPTIONAL: Work / Enterprise Chat (leave disabled unless you want to block them) ===
+! To block these as well, move them out of the comment block and into active rules.
+! ||teams.microsoft.com^$important
+! ||slack.com^$important
+! ||slack-msgs.com^$important
+! ||slack-edge.com^$important
+! ||webex.com^$important
+! ||zoom.us^$important
+
+! End of file — Intent: Block major consumer messaging platforms while keeping enterprise chat optional. WhatsApp/Telegram have dedicated strict files.
