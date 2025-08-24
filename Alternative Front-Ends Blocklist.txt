@@ -1,0 +1,73 @@
+! AdGuard Home - Alternative Front-Ends Blocklist
+! Updated and categorized by Coly & ChatGPT - 2025-08-23
+! Purpose: Block unofficial alternative front-ends for social media, video, and streaming platforms which bypass parental controls, ads, and moderation
+
+! === YouTube Front-Ends ===
+||invidio.us^$important
+||invidious.io^$important
+||piped.kavin.rocks^$important
+||piped.video^$important
+||ytapi.org^$important
+||cdn.ytapi.org^$important
+||mp3api.ytjar.info^$important
+||returnyoutubedislikeapi.com^$important
+
+! === Twitch Front-Ends ===
+||safetwitch.ducks.party^$important
+||safetwitch.frontendfriendly.xyz^$important
+||ttv.vern.cc^$important
+||ttvbackend.vern.cc^$important
+||vern.cc^$important
+||frontendfriendly.xyz^$important
+
+! === Reddit / Lemmy Front-Ends ===
+||libreddit.spike.codes^$important
+||libreddit.domain.glass^$important
+||reddit.invak.id^$important
+||reddit.rtrace.io^$important
+||redlib.kavin.rocks^$important
+||r.nf^$important
+||teddit.net^$important
+||reddi.g8x.net^$important
+||lemmy.world^$important
+||lemmy.ml^$important
+||kbin.social^$important
+
+! === Mastodon / Pleroma Instances ===
+||mastodon.social^$important
+||mastodon.online^$important
+||pleroma.site^$important
+
+! === Twitter / Instagram Front-Ends ===
+||bibliogram.art^$important
+||nitter.net^$important
+||nitter.lacontrevoie.fr^$important
+||nitter.poast.org^$important
+||nitter.cz^$important
+||nitter.it^$important
+||tweet.lambda.dance^$important
+||twitter.altfrontend.com^$important
+||proxitok.pabloferreiro.es^$important
+||proxitok.herokuapp.com^$important
+||proxitok.lunar.icu^$important
+
+! === Rimgo (Imgur Front-Ends) ===
+||rimgo.pussthecat.org^$important
+||rimgo.totaldarkness.net^$important
+||rimgo.marcopolo1337.xyz^$important
+||rimgo.lunar.icu^$important
+||rimgo.tokhmi.xyz^$important
+||rimgo.nadeko.net^$important
+||rimgo.minimal.name^$important
+||rimgo.libre.fi^$important
+||rimgo.lacontrevoie.fr^$important
+||rimgo.domain.glass^$important
+||rimgo.blackburn.uk^$important
+||rimgo.altfrontend.com^$important
+
+! === Notes ===
+! - Existing repo rules checked: all Invidious, Piped, Nitter, Rimgo, Libreddit, ProxiTok, etc. preserved.
+! - New additions merged: ytapi.org, returnyoutubedislikeapi.com, vern.cc, frontendfriendly.xyz.
+! - Duplicates pruned (apex blocks cover subdomains unless listed for clarity).
+! - Families: YouTube, Twitch, Reddit/Lemmy, Mastodon/Pleroma, Twitter/Instagram, Rimgo (Imgur).
+! - $important enforced consistently.
