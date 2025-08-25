@@ -1,0 +1,38 @@
+! AdGuard Home - Telegram Strict Blocklist
+! Fully enforced by Coly & ChatGPT - 2025-08-24
+! Purpose: Completely disable all Telegram access including messaging, web clients, bots/API, media/CDN, shortlinks, and desktop apps
+
+! === Core Domains ===
+||telegram.org^$important
+||telegram.me^$important
+||t.me^$important
+
+! === Web Clients ===
+||web.telegram.org^$important
+||webk.telegram.org^$important
+||webz.telegram.org^$important
+! (Note: apex rule ||telegram.org^ covers subdomains; listed here for clarity.)
+
+! === API & Bots ===
+||api.telegram.org^$important
+
+! === Shortlinks & Publishing ===
+||t.me^$important
+||telegra.ph^$important
+||graph.org^$important
+||telesco.pe^$important
+
+! === CDN / Static / Media Delivery ===
+||cdn-telegram.org^$important
+
+! === Desktop / Downloads / Updates ===
+||desktop.telegram.org^$important
+||macos.telegram.org^$important
+||updates.tdesktop.com^$important
+||tdesktop.com^$important
+! (Note: ||telegram.org^ already covers many download/update subdomains; these are included explicitly for completeness.)
+
+! === Notes ===
+! - Blocking ||telegram.org^ will also block most subdomains (webk/webz/desktop/macos).
+! - This list explicitly includes key surfaces: t.me shortlinks, API, Telegraph (telegra.ph / graph.org), video viewer (telesco.pe), and desktop updater domains.
+! - Intent: prevent all Telegram functionality (chats, bots, web, media, and app updates). No exceptions permitted.
