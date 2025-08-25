@@ -1,0 +1,37 @@
+! AdGuard Home - WhatsApp Strict Blocklist
+! Fully enforced by Coly & ChatGPT - 2025-08-24
+! Purpose: Completely disable all WhatsApp access including messaging, voice/video, media, business, and API endpoints
+
+! === Core WhatsApp Domains ===
+||whatsapp.com^$important
+||www.whatsapp.com^$important
+||whatsapp.net^$important
+||wa.me^$important
+
+! === Business & API Services ===
+||business.whatsapp.com^$important
+||api.whatsapp.com^$important
+||whatsappbusiness.com^$important
+
+! === Web & Desktop Variants ===
+||web.whatsapp.com^$important
+||web.whatsapp.net^$important
+||web.whatsapp.org^$important
+||web.whatsapp.in^$important
+||web.whatsapp.biz^$important
+||web.whatsapp.me^$important
+||web.whatsapp.info^$important
+||web.whatsapp.co^$important
+
+! === Media / Static / CDN Delivery ===
+||mmg.whatsapp.net^$important
+||mms.whatsapp.net^$important
+||media.whatsapp.net^$important
+||static.whatsapp.net^$important
+||graph.whatsapp.net^$important
+||cdn.whatsapp.net^$important
+
+! === Notes ===
+! - Covers WhatsApp core, API, business, media/CDN, and all known web variants.
+! - Intent: Prevent all WhatsApp functionality (messaging, voice, video, media).
+! - No exceptions permitted.
