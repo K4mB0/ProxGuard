@@ -1,0 +1,103 @@
+! AdGuard Home - PayPal Blocking Filter
+! Updated and enforced by Coly & ChatGPT - 2025-08-25
+! Purpose: Fully block PayPal and all related services (core, APIs, apps, regional, and subsidiaries)
+
+! === Core PayPal Domains ===
+||paypal.com^$important
+||paypal.me^$important
+||paypalobjects.com^$important
+||paypal-communication.com^$important
+||paypal-survey.com^$important
+||paypalcommunity.com^$important
+
+! === API & Service Endpoints ===
+||api.paypal.com^$important
+||api-m.paypal.com^$important
+||api-3t.paypal.com^$important
+||svcs.paypal.com^$important
+||ipnpb.paypal.com^$important
+||notify.paypal.com^$important
+
+! === CDN & Static Resources ===
+||cdn.paypal.com^$important
+||images.paypal.com^$important
+||pics.paypal.com^$important
+||c.paypal.com^$important
+||b.stats.paypal.com^$important
+
+! === Authentication & Checkout ===
+||login.paypal.com^$important
+||secure.paypal.com^$important
+||checkout.paypal.com^$important
+||clientscripts.paypal.com^$important
+||pilot-payflowpro.paypal.com^$important
+||pilot-payflowlink.paypal.com^$important
+
+! === Business / Merchant Services ===
+||business.paypal.com^$important
+||merchant.paypal.com^$important
+||merchantbenefits.paypal.com^$important
+||shopping.paypal.com^$important
+||resolutioncenter.paypal.com^$important
+||marketingpreferences.paypal.com^$important
+
+! === Mobile & Application Interfaces ===
+||m.paypal.com^$important
+||wallet.paypal.com^$important
+||webapp.paypal.com^$important
+||mobile.paypal.com^$important
+||onetouch.paypal.com^$important
+||webintents.paypal.com^$important
+
+! === Developer / Partner Tools ===
+||partner.paypal.com^$important
+||partnernet.paypal.com^$important
+||developer.paypal.com^$important
+||sandbox.paypal.com^$important
+||pilot-3t.sandbox.paypal.com^$important
+||pilot.sandbox.paypal.com^$important
+
+! === Security, Compliance, Disputes ===
+||verify.paypal.com^$important
+||disputes.paypal.com^$important
+||compliance.paypal.com^$important
+||src.paypal-communication.com^$important
+||prm.paypal-communication.com^$important
+||paypal-prepaid.com^$important
+
+! === Additional PayPal Services ===
+||history.paypal.com^$important
+||smart.paypal-communication.com^$important
+||t.paypal.com^$important
+||h.paypal.com^$important
+||donate.paypal.com^$important
+||giving.paypal.com^$important
+||mobilegiving.paypal.com^$important
+||registries.paypal.com^$important
+||charity.paypal.com^$important
+||fundraiser.paypal.com^$important
+
+! === Regional PayPal Domains ===
+||paypal.co.uk^$important
+||paypal.de^$important
+||paypal.fr^$important
+||paypal.it^$important
+||paypal.es^$important
+||paypal.com.au^$important
+||paypal.ca^$important
+||paypal.nl^$important
+
+! === Subsidiaries (Owned by PayPal) ===
+||braintreepayments.com^$important
+||braintree-api.com^$important
+||xoom.com^$important
+||api.xoom.com^$important
+||venmo.com^$important
+||api.venmo.com^$important
+||hyperwallet.com^$important
+||api.hyperwallet.com^$important
+
+! === Notes ===
+! - Deduped: `www.` subdomains omitted since `||domain^` already covers them.
+! - Added PayPal subsidiaries: Braintree, Xoom, Venmo, Hyperwallet.
+! - Expanded donation domains: charity.paypal.com, fundraiser.paypal.com.
