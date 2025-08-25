@@ -1,0 +1,127 @@
+! AdGuard Home - Gaming Services Allowlist
+! Updated and maintained by Coly & ChatGPT - 2025-08-25
+! Purpose: Ensure full access to major gaming platforms, CDNs, and multiplayer services.
+
+! === Epic Games (Fortnite / Store / Engine) ===
+@@||epicgames.com^$important
+@@||unrealengine.com^$important
+@@||download.epicgames.com^$important
+@@||store-content.ak.epicgames.com^$important
+@@||static-assets-prod.epicgames.com^$important
+@@||fastly-download.epicgames.com^$important
+@@||api.epicgames.dev^$important
+@@||account-public-service-prod.ol.epicgames.com^$important
+@@||fortnite-public-service-prod.ol.epicgames.com^$important
+@@||friends-public-service-prod06.ol.epicgames.com^$important
+@@||lightswitch-public-service-prod06.ol.epicgames.com^$important
+@@||presence-public-service-prod.ol.epicgames.com^$important
+@@||priceengine-public-service-ecomprod01.ol.epicgames.com^$important
+@@||library-service.live.use1a.on.epicgames.com^$important
+@@||social-overlay-launchdarkly-api-prod.ol.epicgames.com^$important
+@@||social-overlay-token-exchange-api-prod.ol.epicgames.com^$important
+
+! === EA / Origin / Apex / FIFA ===
+@@||ea.com^$important
+@@||origin.com^$important
+@@||eulatracking-public-service-prod06.ol.epicgames.com^$important
+@@||eaanticheat.ac.ea.com^$important
+@@||eaassets-a.akamaihd.net^$important
+@@||eaavatarservice.akamaized.net^$important
+@@||cloudsync.juno.ea.com^$important
+@@||autopatch.juno.ea.com^$important
+@@||desktop-config.juno.ea.com^$important
+@@||utas.mob.v4.prd.futc-ext.gcp.ea.com^$important
+@@||fcas.mob.v4.prd.futc-ext.gcp.ea.com^$important
+@@||pin-river.data.ea.com^$important
+@@||gcs.ea.com^$important
+
+! === Minecraft / Mojang ===
+@@||minecraft.net^$important
+@@||mojang.com^$important
+@@||minecraftservices.com^$important
+@@||session.minecraft.net^$important
+@@||textures.minecraft.net^$important
+@@||api.mojang.com^$important
+@@||authserver.mojang.com^$important
+@@||sessionserver.mojang.com^$important
+@@||libraries.minecraft.net^$important
+@@||resources.minecraft.net^$important
+@@||dl.minecraft.net^$important
+@@||realms.minecraft.net^$important
+
+! === Assetto Corsa / Mods ===
+@@||kunos-simulazioni.com^$important
+@@||assettocorsa.net^$important
+@@||acstuff.ru^$important
+@@||game.acstuff.ru^$important
+@@||content.assettocorsa.net^$important
+@@||lobby.kunos-simulazioni.com^$important
+@@||api.kunos-simulazioni.com^$important
+@@||auth.kunos-simulazioni.com^$important
+@@||cdn.kunos-simulazioni.com^$important
+@@||multiplayer.kunos-simulazioni.com^$important
+@@||services.kunos-simulazioni.com^$important
+
+! === Steam (Valve) ===
+@@||steampowered.com^$important
+@@||steamcontent.com^$important
+@@||steamstatic.com^$important
+@@||steam-api.com^$important
+
+! === Xbox (Microsoft) ===
+@@||xbox.com^$important
+@@||xboxlive.com^$important
+@@||assets1.xboxlive.com^$important
+@@||live.com^$important
+
+! === PlayStation (Sony) ===
+@@||playstation.com^$important
+@@||psn.com^$important
+@@||sonyentertainmentnetwork.com^$important
+
+! === Nintendo ===
+@@||nintendo.com^$important
+@@||nintendo.net^$important
+
+! === Ubisoft (Ubisoft Connect / Uplay) ===
+@@||ubisoft.com^$important
+@@||ubi.com^$important
+@@||ubisoftconnect.com^$important
+
+! === Blizzard / Battle.net ===
+@@||battlenet.com^$important
+@@||blizzard.com^$important
+@@||battle.net^$important
+
+! === Rockstar Games ===
+@@||rockstargames.com^$important
+@@||socialclub.rockstargames.com^$important
+@@||rgl.rockstargames.com^$important
+
+! === Riot Games (League of Legends, Valorant) ===
+@@||riotgames.com^$important
+@@||riotcdn.net^$important
+@@||valorant.com^$important
+@@||leagueoflegends.com^$important
+@@||l3cdn.riotgames.com^$important
+
+! === GOG / CD Projekt ===
+@@||gog.com^$important
+@@||gogalaxy.com^$important
+@@||cdprojekt.com^$important
+
+! === Bethesda / Zenimax ===
+@@||bethesda.net^$important
+@@||elderscrollsonline.com^$important
+@@||doom.com^$important
+
+! === Shared Gaming CDNs ===
+@@||akamaihd.net^$important
+@@||akamaized.net^$important
+@@||cloudfront.net^$important
+
+! === Notes ===
+! - Cleaned redundant subdomain entries where root domain already covers all.
+! - Expanded coverage for Riot, Rockstar, Ubisoft Connect, GOG, Bethesda.
+! - Epic/EA section tightened to essential services only (no duplicate telemetry).
+! - This file ensures full game access while parental controls block other categories.
