@@ -1,0 +1,91 @@
+! AdGuard Home - Locked Facebook/Meta Blocklist
+! Updated and enforced by Coly & ChatGPT - 2025-08-25
+! Purpose: Fully block Facebook, Messenger, Meta services, and all connected APIs, CDNs, tracking, and mobile apps
+
+! === Core Facebook Domains ===
+||facebook.com^$important
+||www.facebook.com^$important
+||m.facebook.com^$important
+||mobile.facebook.com^$important
+||mbasic.facebook.com^$important
+||touch.facebook.com^$important
+||free.facebook.com^$important
+||zero.facebook.com^$important
+||d.facebook.com^$important
+||fb.com^$important
+||facebook.net^$important
+
+! === Shortlinks / Link Shim ===
+||fb.me^$important
+||l.facebook.com^$important
+||lm.facebook.com^$important
+
+! === Facebook CDN & Media ===
+||fbcdn.net^$important
+||fbstatic-a.akamaihd.net^$important
+||fbcdn-creative-a.akamaihd.net^$important
+||fbcdn-photos-a.akamaihd.net^$important
+||fbcdn-photos-e-a.akamaihd.net^$important
+||fbcdn-profile-a.akamaihd.net^$important
+||fbcdn-sphotos-a.akamaihd.net^$important
+||fbcdn-sphotos-b.akamaihd.net^$important
+||fbcdn-sphotos-c.akamaihd.net^$important
+||fbcdn-sphotos-d.akamaihd.net^$important
+||fbcdn-sphotos-e-a.akamaihd.net^$important
+||fbcdn-sphotos-f.akamaihd.net^$important
+||fbcdn-sphotos-g.akamaihd.net^$important
+||fbcdn-sphotos-h.akamaihd.net^$important
+||fbcdn-video-a.akamaihd.net^$important
+||fbcdn-video-b.akamaihd.net^$important
+||fbcdn-video-c.akamaihd.net^$important
+||fbcdn-video-d.akamaihd.net^$important
+||fbcdn-video-e.akamaihd.net^$important
+||fbcdn-video-f.akamaihd.net^$important
+||fbcdn-video-g.akamaihd.net^$important
+||fbcdn-video-h.akamaihd.net^$important
+
+! === Facebook API & App Services ===
+||api.facebook.com^$important
+||apps.facebook.com^$important
+||developers.facebook.com^$important
+||graph.facebook.com^$important
+||connect.facebook.com^$important
+||connect.facebook.net^$important
+||upload.facebook.com^$important
+||vupload.facebook.com^$important
+||vupload2.facebook.com^$important
+||star.facebook.com^$important
+||edge-mqtt.facebook.com^$important
+
+! === Facebook Advertising & Analytics ===
+||ads.facebook.com^$important
+||business.facebook.com^$important
+||creative.ak.facebook.com^$important
+||pixel.facebook.com^$important
+||an.facebook.com^$important
+||scontent.facebook.com^$important
+||static.facebook.com^$important
+
+! === Authentication Services ===
+||login.facebook.com^$important
+||oauth.facebook.com^$important
+||sso.facebook.com^$important
+
+! === Facebook Messenger ===
+||messenger.com^$important
+||www.messenger.com^$important
+||m.messenger.com^$important
+||api.messenger.com^$important
+||m.me^$important
+
+! === Meta & Other Subsidiaries ===
+||meta.com^$important
+||threads.net^$important
+||workplace.com^$important
+||atlassolutions.com^$important
+
+! === Notes ===
+! - Apex rule (||facebook.com^) blocks all *.facebook.com subdomains; explicit subs are kept for readability and auditing.
+! - Link shim/redirectors (l.facebook.com, lm.facebook.com, fb.me) included to stop off‑platform pivots.
+! - MQTT/Push channel (edge-mqtt.facebook.com) included to disrupt background app connectivity.
+! - WhatsApp & Telegram are maintained in their own strict files; Instagram lives in the Social Media file.
