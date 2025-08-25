@@ -1,5 +1,5 @@
 ! AdGuard Home - Optimized Adult AI Roleplay Blocklist
-! Updated and categorized by Coly & ChatGPT - 2025-08-23
+! Updated and categorized by Coly & ChatGPT - 2025-08-25
 ! Purpose: Block AI chat/roleplay services used for NSFW, pseudo-romantic, and fetish scenarios
 
 ! === Ollama.AI ===
@@ -98,6 +98,8 @@
 ||girlfriendgpt.com^$important
 ||dreamgf.ai^$important
 ||paradot.ai^$important
+||agnaai.com^$important
+||agnaai.net^$important
 
 ! === Clients / Front-Ends & Tooling ===
 ||sillytavern.app^$important
@@ -146,7 +148,8 @@
 ||personalityforge.com^$important
 
 ! === Notes ===
-! - Hugging Face: removed invalid wildcard (||*.huggingface.co^) — ||huggingface.co^ blocks apex + all subdomains.
-! - wyvernchat.com moved into Wyvern Chat Family.
-! - Misc Roleplay AI regrouped into Clients/Tools, Model Routers, General Platforms, and NSFW Image/Story Generators.
-! - Duplicates removed and families regrouped on 2025-08-23.
+! - Baseline May rules preserved
+! - New families merged (Wyvern, Featherless, Uwu, Qwen/Qianwen)
+! - Hugging Face wildcard fixed (||*.huggingface.co^ removed)
+! - Additional platforms regrouped into Waifu, Clients, Model Routers, General Platforms, NSFW Generators
+! - Duplicates removed, $important standardized
