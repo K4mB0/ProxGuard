@@ -1,0 +1,64 @@
+! Title: Reddit Filter
+! Description: Blocks access to Reddit and all known frontends, mirrors, media servers, and shorteners.
+! Last updated: 2025-08-25
+! Author: Coly & ChatGPT
+
+! === Core Reddit Web ===
+||reddit.com^$important
+||old.reddit.com^$important
+||new.reddit.com^$important
+||amp.reddit.com^$important
+
+! === APIs, Auth & App Backends ===
+||oauth.reddit.com^$important
+||gateway.reddit.com^$important
+||gql.reddit.com^$important
+||ads-api.reddit.com^$important
+
+! === Media & Static/CDN ===
+||v.redd.it^$important
+||i.redd.it^$important
+||preview.redd.it^$important
+||redditmedia.com^$important
+||thumbs.redditmedia.com^$important
+||redditstatic.com^$important
+||s.reddit.com^$important
+||out.reddit.com^$important
+
+! === Shorteners / Link Helpers ===
+||redd.it^$important
+||redditurl.com^$important
+
+! === Frontend Proxies & Mirrors (curated) ===
+! Libreddit / Redlib family
+||libreddit.com^$important
+||libreddit.net^$important
+||libreddit.miaoute.net^$important
+||redlib.nadeko.net^$important
+||redlib.perennialte.ch^$important
+||leddit.xyz^$important
+||redlibrary.xyz^$important
+
+! Teddit family
+||teddit.net^$important
+||snoo.habedieeh.re^$important
+
+! Misc Reddit alt-frontends & proxies
+||rdt.trom.tf^$important
+||reddit.rtrace.io^$important
+||reddit.nerdvpn.de^$important
+||reddit.adminforge.de^$important
+||reddit.claw.ovh^$important
+||red.artemislena.eu^$important
+||reddit.utsav2.dev^$important
+||reddit.owo.si^$important
+||safereddit.com^$important
+
+! === Optional Regex (nuclear) — use with extreme caution ===
+! Blocks any hostname containing “reddit” (can cause collateral damage)
+!/reddit/i$important
+
+! Notes:
+! - AdGuard syntax tip: `||domain^` blocks the root and all subdomains; no need to list `www.` duplicates.
+! - Removed unsupported patterns like `libreddit.*` and `redditproxy--.**.vercel.app`.
+! - If you later spot a new mirror, just add its exact domain under the “Frontend Proxies & Mirrors” section.
