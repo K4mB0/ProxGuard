@@ -1,0 +1,96 @@
+! AdGuard Home - Locked P2P, Torrent & Anonymity Network Blocklist
+! Updated and enforced by Coly & ChatGPT - 2025-08-25
+! Purpose: Block torrent indexing, trackers, P2P clients, Tor and similar anonymity network infrastructures
+
+! === Major Torrent Indexing & Streaming Sites ===
+||1337x.to^$important
+||thepiratebay.org^$important
+||rarbg.to^$important
+||torrentleech.org^$important
+||demonoid.is^$important
+||torrentz2.nz^$important
+||kickasstorrents.to^$important
+||yts.mx^$important
+||eztv.re^$important
+||nyaa.si^$important
+||rutracker.org^$important
+||zooqle.com^$important
+||torrentgalaxy.to^$important
+||torrenting.com^$important
+||xbt.it^$important
+
+! === Additional Torrent Platforms & Mirrors ===
+||bitsnoop.com^$important
+||torrentfunk.com^$important
+||torrentdownloads.me^$important
+||limetorrents.lol^$important
+||magnetdl.com^$important
+||ettv.to^$important
+||glodls.to^$important
+||torlock.com^$important
+||seedpeer.me^$important
+||solidtorrents.net^$important
+||torrentproject2.se^$important
+||bitsearch.to^$important
+||zamunda.net^$important
+||arenabg.com^$important
+||kinozal.tv^$important
+||rutor.info^$important
+||nnmclub.to^$important
+||rustorka.com^$important
+||unblocked.lol^$important
+||pirateproxy.live^$important
+||bayproxy.me^$important
+||tparser.org^$important
+||ahoy.one^$important
+
+! === Torrent Trackers & Public Infrastructure ===
+||router.bittorrent.com^$important
+||router.utorrent.com^$important
+||tracker.openbittorrent.com^$important
+||tracker.opentrackr.org^$important
+||tracker.publicbt.com^$important
+||dht.transmissionbt.com^$important
+||tracker.leechers-paradise.org^$important
+||tracker.trackerfix.com^$important
+
+! === BitTorrent Clients & Update Servers ===
+||update.utorrent.com^$important
+||update.bittorrent.com^$important
+||download-new.utorrent.com^$important
+||vuze.com^$important
+||bitcomet.com^$important
+||deluge-torrent.org^$important
+||qbittorrent.org^$important
+||transmissionbt.com^$important
+||tixati.com^$important
+||frostwire.com^$important
+||webtorrent.io^$important
+
+! === Tor Network & Project Domains ===
+||torproject.org^$important
+||torproject.net^$important
+||torproject.ch^$important
+||torbrowser.org^$important
+||tornodes.net^$important
+||bridges.torproject.org^$important
+||obfs4.torproject.org^$important
+||snowflake.torproject.org^$important
+||meek.azureedge.net^$important
+||metrics.torproject.org^$important
+||status.torproject.org^$important
+||atlas.torproject.org^$important
+||onionoo.torproject.org^$important
+
+! === Alternative Anonymity Networks ===
+||i2p.net^$important
+||i2p.org^$important
+||geti2p.net^$important
+||freenetproject.org^$important
+||getfreenet.org^$important
+
+! === Notes ===
+! - Slimmed redundant 'www.' domains; root-level blocking covers subdomains.
+! - Added recent torrent sites and more public trackers.
+! - Included alternative anonymity networks (I2P and Freenet) beyond Tor.
+! - Covers both indexing, client software, and network evasion infrastructure.
