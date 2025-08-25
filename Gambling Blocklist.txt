@@ -1,0 +1,87 @@
+! AdGuard Home - Locked Gambling Blocklist
+! Updated and enforced by Coly & ChatGPT - 2025-08-25
+! Purpose: Completely block online gambling, poker, crypto casinos, betting, and newly sanctioned illegal platforms
+
+! === Major Online Casinos & Betting Platforms ===
+||bet365.com^$important
+||betway.com^$important
+||bovada.lv^$important
+||casumo.com^$important
+||draftkings.com^$important
+||fanduel.com^$important
+||gambling.com^$important
+||gamcare.org.uk^$important
+||ladbrokes.com^$important
+||mansion.com^$important
+||paddypower.com^$important
+||partypoker.com^$important
+||pokerstars.com^$important
+||skybet.com^$important
+||unibet.com^$important
+||williamhill.com^$important
+||888.com^$important
+||888casino.com^$important
+||888poker.com^$important
+||bwin.com^$important
+
+! === Sports Betting ===
+||betfair.com^$important
+||betonline.ag^$important
+||pinnacle.com^$important
+||sportsbet.com.au^$important
+||sportingbet.com^$important
+||tipico.com^$important
+||betfred.com^$important
+||coral.co.uk^$important
+||marathonbet.com^$important
+||betvictor.com^$important
+||betsson.com^$important
+||betsafe.com^$important
+||nordicbet.com^$important
+
+! === Poker & Skill-Based Casinos ===
+||wsop.com^$important
+||fulltilt.com^$important
+||globalpoker.com^$important
+||ignitioncasino.eu^$important
+||americascardroom.eu^$important
+||ggpoker.com^$important
+||winamax.com^$important
+||partypoker.net^$important
+||pokernow.club^$important
+||pokerbaazi.com^$important
+
+! === Lottery & Bingo Sites ===
+||lottoland.com^$important
+||national-lottery.co.uk^$important
+||lottery.com^$important
+||megamillions.com^$important
+||powerball.com^$important
+||tombola.co.uk^$important
+||foxy.bingo^$important
+||galabingo.com^$important
+||jackpotjoy.com^$important
+||meccabingo.com^$important
+
+! === CDN & Static Resources (Gambling-specific) ===
+||bet365cdn.com^$important
+
+! === Government-Blacklisted Illegal Gambling Sites ===
+||luckyblock.top^$important
+||coins.game^$important
+||spinit2.com^$important
+||sgcasino1.com^$important
+||donbet.com^$important
+||64highflybet64.com^$important
+||trivelabet.com^$important
+||seven08.casino^$important
+||slotmafia.com^$important
+||topausiepokies.com^$important
+||polymarket.com^$important
+||spinanga.com^$important
+
+! === Notes ===
+! - Baseline May list preserved and grouped.
+! - New additions (regulator-blacklisted platforms) incorporated.
+! - No duplicates; streamlined categories for clarity.
+! - Purpose: protect against mainstream casinos and emerging illegal/offshore platforms.
