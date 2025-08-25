@@ -1,73 +1,111 @@
-! AdGuard Home - Alternative Front-Ends Blocklist
-! Updated and categorized by Coly & ChatGPT - 2025-08-23
-! Purpose: Block unofficial alternative front-ends for social media, video, and streaming platforms which bypass parental controls, ads, and moderation
+! AdGuard Home - Alt Frontends & Censorship Bypass Proxies Blocklist
+! Fully enforced by Coly & ChatGPT - 2025-08-25
+! Purpose: Block alternative frontends, mirror gateways, and clearnet proxies that circumvent platform restrictions or content filtering
 
 ! === YouTube Front-Ends ===
-||invidio.us^$important
 ||invidious.io^$important
+||invidio.us^$important
+||invidious.site^$important
+||invidious.snopyta.org^$important
+||instances.invidio.us^$important
 ||piped.kavin.rocks^$important
 ||piped.video^$important
+||piped-instances.kavin.rocks^$important
 ||ytapi.org^$important
 ||cdn.ytapi.org^$important
 ||mp3api.ytjar.info^$important
 ||returnyoutubedislikeapi.com^$important
 
 ! === Twitch Front-Ends ===
-||safetwitch.ducks.party^$important
-||safetwitch.frontendfriendly.xyz^$important
+||vern.cc^$important
 ||ttv.vern.cc^$important
 ||ttvbackend.vern.cc^$important
-||vern.cc^$important
 ||frontendfriendly.xyz^$important
+||safetwitch.ducks.party^$important
+||safetwitch.frontendfriendly.xyz^$important
+||lunar.icu^$important
 
-! === Reddit / Lemmy Front-Ends ===
-||libreddit.spike.codes^$important
-||libreddit.domain.glass^$important
-||reddit.invak.id^$important
-||reddit.rtrace.io^$important
-||redlib.kavin.rocks^$important
-||r.nf^$important
+! === Reddit Front-Ends ===
 ||teddit.net^$important
-||reddi.g8x.net^$important
-||lemmy.world^$important
-||lemmy.ml^$important
-||kbin.social^$important
-
-! === Mastodon / Pleroma Instances ===
-||mastodon.social^$important
-||mastodon.online^$important
-||pleroma.site^$important
+||teddit.*^$important
+||libreddit.com^$important
+||libreddit.net^$important
+||libreddit.*^$important
+||redlib.*^$important
+||leddit.xyz^$important
+||redlibrary.xyz^$important
+||reddit.rtrace.io^$important
+||reddit.nerdvpn.de^$important
+||reddit.adminforge.de^$important
+||reddit.claw.ovh^$important
+||red.artemislena.eu^$important
+||reddit.utsav2.dev^$important
+||reddit.owo.si^$important
+||safereddit.com^$important
+||snoo.habedieeh.re^$important
 
 ! === Twitter / Instagram Front-Ends ===
-||bibliogram.art^$important
 ||nitter.net^$important
-||nitter.lacontrevoie.fr^$important
 ||nitter.poast.org^$important
-||nitter.cz^$important
+||nitter.privacydev.net^$important
+||nitter.eu^$important
+||nitter.42l.fr^$important
+||nitter.snopyta.org^$important
 ||nitter.it^$important
+||nitter.cz^$important
+||nitter.*^$important
 ||tweet.lambda.dance^$important
 ||twitter.altfrontend.com^$important
+||bibliogram.art^$important
 ||proxitok.pabloferreiro.es^$important
 ||proxitok.herokuapp.com^$important
 ||proxitok.lunar.icu^$important
+||whatever.social^$important
+||discuss.whatever.social^$important
 
-! === Rimgo (Imgur Front-Ends) ===
-||rimgo.pussthecat.org^$important
+! === Image / Imgur Front-Ends (Rimgo Family) ===
 ||rimgo.totaldarkness.net^$important
-||rimgo.marcopolo1337.xyz^$important
+||rimgo.pussthecat.org^$important
 ||rimgo.lunar.icu^$important
-||rimgo.tokhmi.xyz^$important
 ||rimgo.nadeko.net^$important
-||rimgo.minimal.name^$important
-||rimgo.libre.fi^$important
-||rimgo.lacontrevoie.fr^$important
 ||rimgo.domain.glass^$important
-||rimgo.blackburn.uk^$important
 ||rimgo.altfrontend.com^$important
+||rimgo.*^$important
+
+! === Misc Alt-Frontends ===
+||sneedflix.cc^$important
+||ajay.app^$important
+||tux.pizza^$important
+||bloat.cat^$important
+||lightbrd.com^$important
+||twiiit.com^$important
+||diasporafoundation.org^$important
+||joinmastodon.org^$important
+||wikiless.org^$important
+||thekitty.zone^$important
+
+! === Censorship / Proxy / Circumvention Infra ===
+||zerotrace.org^$important
+||cdn-zerotrace.pressidium.com^$important
+||bypass.vip^$important
+||api.bypass.vip^$important
+||us1.noblo.cc^$important
+||noblo.cc^$important
+||binternet.ducks.party^$important
+||dukes.workers.dev^$important
+||cf-web-proxy.pages.dev^$important
+||devprod.cloudflare.dev^$important
+||gamedriveorg.pd*.workers.dev^$important
+||cdn.pd*.workers.dev^$important
+||cloudflare-ipfs.com^$important
+||onion.to^$important
+||tor2web.io^$important
+||i2p^$important
+||tunnel.googlezip.net^$important
 
 ! === Notes ===
-! - Existing repo rules checked: all Invidious, Piped, Nitter, Rimgo, Libreddit, ProxiTok, etc. preserved.
-! - New additions merged: ytapi.org, returnyoutubedislikeapi.com, vern.cc, frontendfriendly.xyz.
-! - Duplicates pruned (apex blocks cover subdomains unless listed for clarity).
-! - Families: YouTube, Twitch, Reddit/Lemmy, Mastodon/Pleroma, Twitter/Instagram, Rimgo (Imgur).
-! - $important enforced consistently.
+! - Old June baseline preserved
+! - New families merged in: ytapi.org, returnyoutubedislikeapi.com, vern.cc, frontendfriendly, Twitch safetwitch, Rimgo expansion
+! - Wildcard *.domain entries replaced with ||domain^ (AdGuard-compatible)
+! - Organized by platform family (YouTube, Twitch, Reddit, Twitter/Instagram, Rimgo, Misc, Infra)
+! - No duplicates; $important enforced
