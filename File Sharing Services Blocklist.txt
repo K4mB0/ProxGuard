@@ -1,5 +1,5 @@
 ! AdGuard Home - File Sharing Services Blocklist (Strict)
-! Updated and enforced by Coly & ChatGPT - 2025-08-23
+! Updated and enforced by Coly & ChatGPT - 2025-08-25
 ! Purpose: Block all file sharing and cloud transfer platforms except Google Drive (explicitly allowed)
 
 ! === ALLOWLIST: Google Drive Only ===
@@ -76,34 +76,25 @@
 ||turbobit.net^$important
 ||turb.to^$important
 
-! === BLOCKLIST: Openload Family ===
-||openload.co^$important
-||openload.io^$important
-||oload.tv^$important
-
-! === BLOCKLIST: Uptobox Family ===
+! === BLOCKLIST: Other Major File Hosts ===
+||fileupload.com^$important
+||upload.ee^$important
 ||uptobox.com^$important
 ||uptostream.com^$important
 ||uptodown.com^$important
-
-! === BLOCKLIST: Filecrypt Family ===
-||filecrypt.co^$important
-||filecrypt.cc^$important
-||_9666._https.cnl.filecrypt.cc^$important
-
-! === BLOCKLIST: Mixdrop Family ===
-||mixdrop.ag^$important
-||mixdrop.my^$important
-
-! === BLOCKLIST: Standalone Hosts ===
-||fileupload.com^$important
-||upload.ee^$important
+||openload.co^$important
+||oload.tv^$important
+||openload.io^$important
 ||datafilehost.com^$important
 ||dfh.to^$important
 ||0x0.st^$important
 ||catbox.moe^$important
 ||buzzheavier.com^$important
 ||pixeldrain.com^$important
+||mixdrop.ag^$important
+||mixdrop.my^$important
+||filecrypt.co^$important
+||_9666._https.cnl.filecrypt.cc^$important
 ||downr.org^$important
 
 ! === BLOCKLIST: Cloud Transfer / Temp Sharing ===
@@ -118,42 +109,35 @@
 ||transferxl.com^$important
 ||txl.tools^$important
 
-! === BLOCKLIST: Image Hosts ===
+! === BLOCKLIST: Image/File Hosting Bypass ===
+||file.garden^$important
 ||i.postimg.cc^$important
 ||i.ibb.co^$important
 ||i.imgur.com^$important
 ||freeimage.host^$important
-||file.garden^$important
+||media.tenor.com^$important
 
-! === BLOCKLIST: Link Protectors / Unlockers ===
+! === BLOCKLIST: Unlock/Gating Services ===
 ||sub2unlock.io^$important
+
+! === BLOCKLIST: Video/File Save Mirrors ===
 ||files.savemp4.red^$important
-||sounddownmp3.com^$important
 
-! === BLOCKLIST: Counting / Telemetry ===
-||count.getloli.com^$important
-
-! === BLOCKLIST: HF-Mirror Assets ===
+! === BLOCKLIST: AI/CDN Mirrors Used for File Hosting ===
 ||cdn-avatars.hf-mirror.com^$important
 ||de5282c3ca0c.edge.sdk.hf-mirror.com^$important
 
-! === BLOCKLIST: Subsonic Workers (Mirrors) ===
+! === BLOCKLIST: Subsonic Worker File Mirrors ===
 ||coom2.subsonic.workers.dev^$important
 ||down.subsonic.workers.dev^$important
 ||lr.subsonic.workers.dev^$important
 ||kem2.subsonic.workers.dev^$important
 
-! === BLOCKLIST: ModsLocker ===
-||modslocker.com^$important
-||cdn.modslocker.com^$important
-||dl1.modslocker.com^$important
-
-! === BLOCKLIST: Pixeldrain Workers (Bypass Mirrors) ===
-||gamedriveorg.pd*.workers.dev^$important
-||cdn.pd*.workers.dev^$important
+! === BLOCKLIST: Counters / Trackers in File Sharing ===
+||count.getloli.com^$important
 
 ! === Notes ===
-! - Google Drive is explicitly allowed; all other platforms are blocked
-! - Covers direct file hosts, cloud sync services, temporary link sharing, and CDNs
-! - New sections grouped 2025-08-23 for clarity
-! - No exceptions permitted
+! - Google Drive explicitly allowed; all others blocked
+! - New additions grouped by type (image hosts, gating, mirrors, workers)
+! - No duplicates; consistent $important
+! - Intent: strict denial of file sharing and link-based transfer
