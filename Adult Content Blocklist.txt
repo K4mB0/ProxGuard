@@ -1,0 +1,152 @@
+! AdGuard Home - Optimized Adult Content Blocklist
+! Updated and enforced by Coly & ChatGPT - 2025-08-25
+! Purpose: Complete denylist for explicit adult content, cam sites, VR, AI-powered and creator platforms
+
+! === Major Tube & Free Platforms ===
+||pornhub.com^$important
+||phncdn.com^$important
+||pornhubpremium.com^$important
+||xvideos.com^$important
+||xvideos-cdn.com^$important
+||xnxx.com^$important
+||xnxx-cdn.com^$important
+||xhamster.com^$important
+||xhamster.desi^$important
+||xhcdn.com^$important
+||youporn.com^$important
+||redtube.com^$important
+||tube8.com^$important
+||youjizz.com^$important
+||spankbang.com^$important
+||beeg.com^$important
+||porntrex.com^$important
+||pornone.com^$important
+||motherless.com^$important
+||xmoviesforyou.com^$important
+||xozilla.com^$important
+||daftsex.com^$important
+||eporner.com^$important
+||porndig.com^$important
+||pornbest.org^$important
+||porn300.com^$important
+||porngo.com^$important
+||porn.com^$important
+||pornhd.com^$important
+||pornerbros.com^$important
+||pornhat.com^$important
+||pornktube.com^$important
+||pornmate.com^$important
+||porntube.com^$important
+||pornwhite.com^$important
+||perfectgirls.net^$important
+||pichunter.com^$important
+||playvids.com^$important
+||pornpics.com^$important
+||pornpictureshq.com^$important
+||sex.com^$important
+||nudostar.tv^$important
+||bongacams11.com^$important
+||faponic.com^$important
+||javseen.tv^$important
+||javseenz.tv^$important
+||kemono.su^$important
+||coomer.su^$important
+||coom.subsonic.workers.dev^$important
+||jav.subsonic.workers.dev^$important
+||kem.subsonic.workers.dev^$important
+
+! === Premium Adult Networks ===
+||brazzers.com^$important
+||bangbros.com^$important
+||bangcdn.com^$important
+||reality-kings.com^$important
+||rk.com^$important
+||mofos.com^$important
+||adulttime.com^$important
+||naughtyamerica.com^$important
+||teamskeet.com^$important
+||fakehub.com^$important
+||twistys.com^$important
+||digitalplayground.com^$important
+||wicked.com^$important
+||evilangel.com^$important
+||kink.com^$important
+
+! === Webcam / Live Cam Sites ===
+||mydirtyhobby.com^$important
+||cam4.com^$important
+||myfreecams.com^$important
+||bongacams.com^$important
+||livejasmin.com^$important
+||imlive.com^$important
+||flirt4free.com^$important
+||cams.com^$important
+||streamate.com^$important
+||naked.com^$important
+||slutroulette.com^$important
+
+! === Creator-Driven Adult Platforms ===
+||fetlife.com^$important
+||adultfriendfinder.com^$important
+||alt.com^$important
+||ashleymadison.com^$important
+||seeking.com^$important
+||onlyfans.com^$important
+||of-cdn.com^$important
+||fansly.com^$important
+||manyvids.com^$important
+||fancentro.com^$important :contentReference[oaicite:2]{index=2}
+
+! === Image Boards & Adult Forums ===
+||rule34.xxx^$important
+||gelbooru.com^$important
+||danbooru.donmai.us^$important
+||e621.net^$important
+||sankakucomplex.com^$important
+
+! === VR / Immersive Adult Platforms ===
+||sexlikereal.com^$important :contentReference[oaicite:3]{index=3}
+
+! === Image / CDN Delivery Sites ===
+||redgifs.com^$important
+||gifdeliverynetwork.com^$important
+||gfycat.com^$important
+||imgbox.com^$important
+||imagetwist.com^$important
+||imagevenue.com^$important
+||imagebam.com^$important
+
+! === Adult Ad & Analytics Networks ===
+||trafficjunky.com^$important
+||trafficfactory.biz^$important
+||exoclick.com^$important
+||juicyads.com^$important
+||adtng.com^$important
+||plugrush.com^$important
+||etahub.com^$important
+
+! === Emerging AI Tooling & Deepfake Platforms ===
+||grok.imagine^$important (if specific domain; placeholder)
+||GPTease.*^$important ; AI tools used in adult content contexts :contentReference[oaicite:4]{index=4}
+
+! === Legacy or Gray-Area Domains (Optional) ===
+||4chan.org^$important
+||4channel.org^$important
+||planetsuzy.org^$important
+||playboy.com^$important
+
+! === Expansion Candidates (Monitoring) ===
+||hqporner.com^$important
+||tnaflix.com^$important
+||xrares.com^$important
+||fux.com^$important
+||spankwire.com^$important
+||drtuber.com^$important
+||sleazyneasy.com^$important
+
+! === Notes ===
+! - Baseline preserved and grouped
+! - Added emerging platforms: FanCentro (verified), SexLikeReal VR
+! - Added placeholder for AI deepfake (Grok/GPTease)
+! - Duplicates removed; wildcard *.domain replaced to adhere to AdGuard
+! - Target: absolute denial of all adult content channels
