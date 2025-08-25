@@ -1,0 +1,81 @@
+! AdGuard Home - Comprehensive Discord Blocklist
+! Updated and enforced by Coly & ChatGPT - 2025-08-25
+! Purpose: Completely block all Discord-related services, clients, media, API, and secondary domains with zero tolerance
+
+! === Core Discord Domains ===
+||discord.com^$important
+||discord.gg^$important
+||discord.gift^$important
+||discord.new^$important
+||discord.media^$important
+||discordapp.com^$important
+||discordapp.net^$important
+||dis.gd^$important
+||discord.co^$important
+
+! === CDN & Media ===
+||cdn.discordapp.com^$important
+||media.discordapp.net^$important
+||downloads.discordapp.net^$important
+||attachments.discordapp.net^$important
+||media.discordapp.com^$important
+
+! === Voice & Video ===
+||voice.discordapp.com^$important
+||rtc.discord.media^$important
+||rtc*.discord.media^$important
+
+! === API & Gateway ===
+||gateway.discord.gg^$important
+||api.discord.com^$important
+||discord-api.com^$important
+||status.discord.com^$important
+||discordstatus.com^$important
+
+! === Authentication & Login ===
+||login.discord.com^$important
+||oauth2.discord.com^$important
+
+! === Support, Community, Safety ===
+||support.discord.com^$important
+||support-dev.discord.com^$important
+||safety.discord.com^$important
+||blog.discord.com^$important
+
+! === Storefronts & Apps ===
+||app.discord.com^$important
+||apps.discord.com^$important
+||streamkit.discord.com^$important
+||discord.design^$important
+||merch.discord.com^$important
+||discord.store^$important
+
+! === Additional & Alternate Domains ===
+||discord.dev^$important
+||discord.tools^$important
+||discordactivities.com^$important
+||discordsays.com^$important
+||discord-activities.com^$important
+||discordmerch.com^$important
+||discord.skysim.sbs^$important
+||discord.bio^$important
+||dsc.gg^$important
+||top.gg^$important
+||discordlist.gg^$important
+||discordhub.com^$important
+||discord.id^$important
+||dsc.link^$important
+||invite.gg^$important
+||discord.me^$important
+||discord.link^$important
+||cord.vip^$important
+||cord.xyz^$important
+
+! === Third-Party Bypass / Invite Services ===
+||discord.c99.nl^$important
+
+! === Notes ===
+! - Apex (||discord.com^) blocks all *.discord.com subs; explicit subs are kept for readability/audit.
+! - New addition: discord.c99.nl (known bypass/invite generator).
+! - This blocklist aims to entirely neutralize Discord on all fronts (clients, CDN, API, vanity links, alternate domains).
+! - No exceptions permitted.
