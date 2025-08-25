@@ -1,0 +1,41 @@
+! AdGuard Home - Locked Snapchat Blocklist
+! Updated and enforced by Coly & ChatGPT - 2025-08-25
+! Purpose: Fully block Snapchat access, media, APIs, location, ads, and authentication services
+
+! === Core Snapchat Domains ===
+||snapchat.com^$important
+||www.snapchat.com^$important
+||snap.com^$important
+||snapchat.net^$important
+||snapkit.com^$important
+||snap-dev.net^$important
+||snapads.com^$important
+||snapmobile.net^$important
+
+! === Media, CDN, and Hosting ===
+||sc-cdn.net^$important
+||sc-static.net^$important
+||snapimg.com^$important
+||bolt-gcdn.sc-cdn.net^$important
+||cf-st.sc-cdn.net^$important
+||gcs.sc-cdn.net^$important
+||snapchat-proxy.appspot.com^$important
+
+! === APIs and Platform Services ===
+||api.snapchat.com^$important
+||api.snapkit.com^$important
+||us-central1-gcp.api.snapchat.com^$important
+||us-east1-aws.api.snapchat.com^$important
+||us-east4-gcp.api.snapchat.com^$important
+||kit.snapchat.com^$important
+||auth.snapchat.com^$important
+||gt-api.snapchat.com^$important
+
+! === Location & Mapping Infrastructure ===
+||map.snapchat.com^$important
+||loc.sc-jpl.com^$important
+||feelinsonice.com^$important
+||feelinsonice-hrd.appspot.com^$important
+||appspot.l.google.com^$important
+
+! === Stories, D
