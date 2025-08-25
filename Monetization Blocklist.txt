@@ -1,0 +1,80 @@
+! AdGuard Home - Monetization & Creator Donation Platform Blocklist
+! Updated and enforced by Coly & ChatGPT - 2025-08-25
+! Purpose: Block platforms used for crowdfunding, donations, creator tipping, and membership services
+
+! === Ko-Fi & Payment Gateways ===
+||ko-fi.com^$important
+||kofi.com^$important
+||storage.ko-fi.com^$important
+||api.ko-fi.com^$important
+||cdn.ko-fi.com^$important
+||assets.ko-fi.com^$important
+||media.ko-fi.com^$important
+||images.ko-fi.com^$important
+||shop.ko-fi.com^$important
+||payments.ko-fi.com^$important
+||stripe.ko-fi.com^$important
+||transactions.ko-fi.com^$important
+||analytics.ko-fi.com^$important
+||tracking.ko-fi.com^$important
+||auth.ko-fi.com^$important
+||accounts.ko-fi.com^$important
+||login.ko-fi.com^$important
+||api-v2.ko-fi.com^$important
+||developers.ko-fi.com^$important
+||docs.ko-fi.com^$important
+||ko-fi.net^$important
+||ko-fi.org^$important
+||kofi-cdn.com^$important
+||koficdn.com^$important
+
+! === Patreon ===
+||patreon.com^$important
+||www.patreon.com^$important
+||api.patreon.com^$important
+||cdn.patreon.com^$important
+||blog.patreon.com^$important
+||support.patreon.com^$important
+
+! === Buy Me a Coffee ===
+||buymeacoffee.com^$important
+||www.buymeacoffee.com^$important
+||cdn.buymeacoffee.com^$important
+||assets.buymeacoffee.com^$important
+||api.buymeacoffee.com^$important
+
+! === SubscribeStar ===
+||subscribestar.com^$important
+||www.subscribestar.com^$important
+||api.subscribestar.com^$important
+||static.subscribestar.com^$important
+
+! === Other Creator Monetization & Adult Platforms ===
+||onlyfans.com^$important
+||fansly.com^$important
+||manyvids.com^$important
+||gumroad.com^$important
+||itch.io^$important
+||creatorlink.net^$important
+
+! === Stripe Payment Infrastructure (used across platforms) ===
+||stripe.com^$important
+||stripe.network^$important
+||js.stripe.com^$important
+||m.stripe.network^$important
+||api.stripe.com^$important
+||cdn.stripe.com^$important
+||checkout.stripe.com^$important
+||pay.stripe.com^$important
+||billing.stripe.com^$important
+||auth.stripe.com^$important
+||dashboard.stripe.com^$important
+||accounts.stripe.com^$important
+||support.stripe.com^$important
+||radar.stripe.com^$important
+
+! === Notes ===
+! - PayPal entries removed (covered in dedicated PayPal blocklist).
+! - Covers Ko-Fi, Patreon, BuyMeACoffee, SubscribeStar, Gumroad, Itch.io.
+! - Includes adult monetization sites (OnlyFans, Fansly, ManyVids).
+! - Stripe infra blocked here because it underpins most creator donation platforms.
