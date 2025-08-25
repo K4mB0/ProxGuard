@@ -1,0 +1,82 @@
+! AdGuard Home - Search Bypass Master Blocklist
+! Fully enforced by Coly & ChatGPT - 2025-08-25
+! Purpose: Block DuckDuckGo, private search engines, and alt/meta-search services used to bypass parental or content filtering
+
+! === DuckDuckGo Core & Services ===
+||duckduckgo.com^$important
+||duck.co^$important
+||duck.com^$important
+||ddg.gg^$important
+||html.duckduckgo.com^$important
+||lite.duckduckgo.com^$important
+||images.duckduckgo.com^$important
+||links.duckduckgo.com^$important
+||safe.duckduckgo.com^$important
+||mobile-api.duckduckgo.com^$important
+||external-content.duckduckgo.com^$important
+||proxy.duckduckgo.com^$important
+||duckduckgo-owned-server.com^$important
+||duckduckgo.startpageapi.com^$important
+||ddg-api.herokuapp.com^$important
+||duckduckgo.eu.org^$important
+||start.duckduckgo.com^$important
+||next.duckduckgo.com^$important
+||unduck.link^$important
+||improving.duckduckgo.com^$important
+||privacy-test-pages.duckduckgo.com^$important
+
+! === Startpage / Ixquick ===
+||startpage.com^$important
+||ixquick.com^$important
+||ixquick.eu^$important
+||startpage.io^$important
+
+! === Qwant ===
+||qwant.com^$important
+||qwant.fr^$important
+||api.qwant.com^$important
+||cdn.qwant.com^$important
+
+! === Brave Search ===
+||search.brave.com^$important
+||brave.com^$important
+
+! === Ecosia & Swisscows ===
+||ecosia.org^$important
+||cdn.ecosia.org^$important
+||swisscows.com^$important
+||swisscows.ch^$important
+
+! === Mojeek / MetaGer ===
+||mojeek.com^$important
+||metager.org^$important
+||metager.de^$important
+
+! === Other Private / Meta Search Engines ===
+||yep.com^$important
+||searchencrypt.com^$important
+||gibiru.com^$important
+||infinitysearch.co^$important
+||disconnect.me^$important
+||search.disconnect.me^$important
+||oscobo.co.uk^$important
+
+! === Self-Hosted & Alt Front-Ends ===
+||searx.be^$important
+||searx.space^$important
+||searx.work^$important
+||searx.bar^$important
+||searx.pro^$important
+||searx.fun^$important
+||searx.info^$important
+||searx.xyz^$important
+||searxng.org^$important
+||whoogle.net^$important
+||whooglesearch.net^$important
+
+! === Notes ===
+! - Baseline DuckDuckGo rules preserved and expanded with alt/mirrors
+! - Includes all major "privacy search engines" (Startpage, Qwant, Mojeek, MetaGer, Ecosia, Swisscows, Brave)
+! - Captures self-hosted and open-source alternatives (Searx, Whoogle)
+! - No duplicates; $important standardized
+! - Intent: total denial of search-based filter bypass
