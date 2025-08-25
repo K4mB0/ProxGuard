@@ -1,0 +1,23 @@
+! AdGuard Home - Slang & Profanity Dictionary Blocklist
+! Updated and enforced by Coly & ChatGPT - 2025-08-25
+! Purpose: Block slang dictionaries and profanity reference tools used to bypass content filters or expose inappropriate terms
+
+! === Urban Dictionary ===
+||urbandictionary.com^$important
+
+! === Other Slang Dictionaries ===
+||slangdefine.org^$important
+||onlineslangdictionary.com^$important
+||noslang.com^$important
+||definder.net^$important
+||meaning-book.com^$important
+||slanguide.com^$important
+||wikislang.com^$important
+||slangit.com^$important
+||freeslangdictionary.com^$important
+||mydictionary.net^$important
+
+! === Notes ===
+! - Cleaned duplicates: root rules cover subdomains.
+! - Expanded with additional slang/profanity dictionaries (Slangit, FreeSlangDictionary, MyDictionary).
+! - Excludes mainstream dictionary sites (Dictionary.com, Merriam-Webster, etc.) to avoid over-blocking.
