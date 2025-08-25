@@ -1,0 +1,57 @@
+! Title: Allow Google Services
+! Description: Comprehensive allowlist for core Google services (Gmail, Classroom, Drive, Docs, Meet, Calendar, Contacts) + required auth/CDN/API endpoints.
+! Updated: 2025-08-25
+! Author: Coly & ChatGPT
+
+! === Identity & Core Google ===
+@@||accounts.google.com^$important
+@@||myaccount.google.com^$important
+@@||google.com^$important
+
+! === Gmail ===
+@@||gmail.com^$important
+@@||mail.google.com^$important
+@@||m.gmail.com^$important
+@@||mobile.gmail.com^$important
+@@||smtp.gmail.com^$important
+@@||imap.gmail.com^$important
+@@||pop.gmail.com^$important
+
+! === Workspace Apps ===
+@@||classroom.google.com^$important
+@@||drive.google.com^$important
+@@||docs.google.com^$important
+@@||meet.google.com^$important
+@@||calendar.google.com^$important
+@@||contacts.google.com^$important
+
+! === Required Delivery / CDN ===
+@@||gstatic.com^$important
+@@||ssl.gstatic.com^$important
+@@||fonts.gstatic.com^$important
+@@||googleapis.com^$important
+@@||apis.google.com^$important
+@@||www.googleapis.com^$important
+@@||oauth2.googleapis.com^$important
+@@||content.googleapis.com^$important
+@@||googleusercontent.com^$important
+@@||docs.googleusercontent.com^$important
+@@||drive.googleusercontent.com^$important
+@@||lh3.googleusercontent.com^$important
+
+! === Google Meet (WebRTC NAT traversal) ===
+@@||stun.l.google.com^$important
+@@||stun1.l.google.com^$important
+@@||stun2.l.google.com^$important
+@@||stun3.l.google.com^$important
+@@||stun4.l.google.com^$important
+
+! === (Optional) reCAPTCHA used on some Google sign-ins — enable if you see blocks ===
+! @@||www.recaptcha.net^$important
+! @@||www.google.com/recaptcha/^$important
+
+! Footer:
+! - `||domain^` covers all subdomains; `www.` variants are unnecessary.
+! - `googleusercontent.com` & friends are essential for file previews, attachments, avatars, exports, etc.
+! - STUN hosts are required for Meet call connectivity behind NAT.
+! - Keep this allowlist paired with your strict blocklists elsewhere to avoid accidental over-allowing.
