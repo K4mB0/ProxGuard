@@ -1,5 +1,5 @@
 ! AdGuard Home - File Sharing Services Blocklist (Strict)
-! Updated and enforced by Coly & ChatGPT - 2025-08-25
+! Updated and enforced by Coly & ChatGPT - 2025-08-26
 ! Purpose: Block all file sharing and cloud transfer platforms except Google Drive (explicitly allowed)
 
 ! === ALLOWLIST: Google Drive Only ===
@@ -91,11 +91,18 @@
 ||catbox.moe^$important
 ||buzzheavier.com^$important
 ||pixeldrain.com^$important
+||pixeldrain.net^$important
+||pixeldrain-bypass.cybar.xyz^$important
 ||mixdrop.ag^$important
 ||mixdrop.my^$important
+||megadb.net^$important
+||megadb.xyz^$important
+||fs18.megadb.xyz^$important
 ||filecrypt.co^$important
+||filecrypt.cc^$important
 ||_9666._https.cnl.filecrypt.cc^$important
 ||downr.org^$important
+||clicknupload.click^$important
 
 ! === BLOCKLIST: Cloud Transfer / Temp Sharing ===
 ||multcloud.com^$important
@@ -138,6 +145,7 @@
 
 ! === Notes ===
 ! - Google Drive explicitly allowed; all others blocked
-! - New additions grouped by type (image hosts, gating, mirrors, workers)
-! - No duplicates; consistent $important
-! - Intent: strict denial of file sharing and link-based transfer
+! - Includes file hosts, cloud sync, bypass domains, mirrors, and trackers
+! - ModsFire & UnionCrax remain allowed
+! - No duplicates; all enforced with $important
+! - Strict denial of file sharing and circumvention platforms
