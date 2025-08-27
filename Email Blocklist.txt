@@ -92,6 +92,8 @@
 ||app.tuta.com^$important
 ||api.tuta.com^$important
 ||w16.api.tuta.com^$important
+||mailinator.com^$important
+||www.mailinator.com^$important
 
 ! === BLOCKLIST: Email Infrastructure & Marketing Services ===
 ||emailsrvr.com^$important
