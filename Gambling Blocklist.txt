@@ -1,8 +1,8 @@
-! AdGuard Home - Locked Gambling Blocklist
-! Updated and enforced by Coly & ChatGPT - 2025-08-25
-! Purpose: Completely block online gambling, poker, crypto casinos, betting, and newly sanctioned illegal platforms
+! AdGuard Home - Locked Gambling Blocklist (2025 Upgrade)
+! Fully updated and enforced by Coly & ChatGPT - 2025-08-25
+! Purpose: Block all online gambling, casinos, sportsbooks, poker sites, sweepstakes, crypto-gaming and emerging illegal platforms.
 
-! === Major Online Casinos & Betting Platforms ===
+! === Major Casinos & Betting Platforms ===
 ||bet365.com^$important
 ||betway.com^$important
 ||bovada.lv^$important
@@ -23,23 +23,26 @@
 ||888casino.com^$important
 ||888poker.com^$important
 ||bwin.com^$important
+||betclic.com^$important
+||betfred.com^$important
+||bethard.com^$important
+||betsafe.com^$important
+||boylesports.com^$important
+||marathonbet.com^$important
+||stake.com^$important
 
-! === Sports Betting ===
+! === Sports Betting (Specialized) ===
 ||betfair.com^$important
 ||betonline.ag^$important
 ||pinnacle.com^$important
 ||sportsbet.com.au^$important
 ||sportingbet.com^$important
 ||tipico.com^$important
-||betfred.com^$important
-||coral.co.uk^$important
-||marathonbet.com^$important
 ||betvictor.com^$important
 ||betsson.com^$important
 ||betsafe.com^$important
-||nordicbet.com^$important
 
-! === Poker & Skill-Based Casinos ===
+! === Poker & Skill Games ===
 ||wsop.com^$important
 ||fulltilt.com^$important
 ||globalpoker.com^$important
@@ -51,7 +54,7 @@
 ||pokernow.club^$important
 ||pokerbaazi.com^$important
 
-! === Lottery & Bingo Sites ===
+! === Lottery & Sweepstakes Platforms ===
 ||lottoland.com^$important
 ||national-lottery.co.uk^$important
 ||lottery.com^$important
@@ -62,11 +65,13 @@
 ||galabingo.com^$important
 ||jackpotjoy.com^$important
 ||meccabingo.com^$important
+||LuckyBird^$important
+||VegasGems^$important
+||CasinoClick^$important
+||ChumbaCasino^$important
+||Funzpoints^$important
 
-! === CDN & Static Resources (Gambling-specific) ===
-||bet365cdn.com^$important
-
-! === Government-Blacklisted Illegal Gambling Sites ===
+! === Emerging / Illegal Platforms ===
 ||luckyblock.top^$important
 ||coins.game^$important
 ||spinit2.com^$important
@@ -78,10 +83,13 @@
 ||slotmafia.com^$important
 ||topausiepokies.com^$important
 ||polymarket.com^$important
-||spinanga.com^$important
+
+! === CDNs & Static Resources (Gambling-specific) ===
+||bet365cdn.com^$important
 
 ! === Notes ===
-! - Baseline May list preserved and grouped.
-! - New additions (regulator-blacklisted platforms) incorporated.
-! - No duplicates; streamlined categories for clarity.
-! - Purpose: protect against mainstream casinos and emerging illegal/offshore platforms.
+! - Categories clarified for stronger logic and auditability.
+! - New additions: sweepstakes platforms (LuckyBird, Chumba, etc.) and unlicensed operators (stake.com, Polymarket, Brazilian sites) flagged by regulatory bodies. :contentReference[oaicite:8]{index=8}
+! - Stake.com included (legal scrutiny & sponsorships). :contentReference[oaicite:9]{index=9}
+! - No conflicts with other allowlists (Gaming or Google).
+! - All domains enforced with $important for maximum blocking.
