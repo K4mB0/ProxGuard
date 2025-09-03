@@ -1,110 +1,60 @@
 ! AdGuard Home - File Sharing Services Blocklist (Strict)
-! Updated and enforced by Coly & ChatGPT - 2025-08-26
-! Purpose: Block all file sharing and cloud transfer platforms except Google Drive (explicitly allowed)
+! Updated by Coly & ChatGPT - 2025-08-26
+! Purpose: Block all file sharing and cloud transfer platforms.
+! Google Drive is allowed via the main Google Allowlist (not duplicated here).
 
-! === ALLOWLIST: Google Drive Only ===
-@@||drive.google.com^$important
-@@||docs.google.com^$important
-@@||googleusercontent.com^$important
-@@||ssl.gstatic.com^$important
-@@||googleapis.com^$important
-
-! === BLOCKLIST: MEGA ===
-||mega.nz^$important
-||mega.io^$important
-||mega.co.nz^$important
-
-! === BLOCKLIST: MediaFire ===
-||mediafire.com^$important
-||mfi.re^$important
-||mediafirecdn.com^$important
-
-! === BLOCKLIST: Zippyshare ===
-||zippyshare.com^$important
-
-! === BLOCKLIST: 4shared ===
-||4shared.com^$important
-||4shared-china.com^$important
-||4shared.info^$important
-
-! === BLOCKLIST: Dropbox ===
-||dropbox.com^$important
-||dropboxusercontent.com^$important
-||dropboxstatic.com^$important
-
-! === BLOCKLIST: WeTransfer ===
-||wetransfer.com^$important
-||we.tl^$important
-||wt.social^$important
-
-! === BLOCKLIST: RapidShare ===
+! === Legacy / Defunct Hosts ===
 ||rapidshare.com^$important
 ||rapidshare.de^$important
-
-! === BLOCKLIST: SendSpace ===
-||sendspace.com^$important
-||sendspace.pl^$important
-
-! === BLOCKLIST: Box ===
-||box.com^$important
-||boxcdn.net^$important
-||box.net^$important
-
-! === BLOCKLIST: pCloud ===
-||pcloud.com^$important
-||pcloud.link^$important
-||pc.cd^$important
-
-! === BLOCKLIST: FileFactory ===
-||filefactory.com^$important
-||ff.im^$important
-
-! === BLOCKLIST: 1fichier ===
-||1fichier.com^$important
-||1fichier.net^$important
-
-! === BLOCKLIST: Uploaded ===
-||uploaded.net^$important
-||uploaded.to^$important
-||ul.to^$important
-
-! === BLOCKLIST: Rapidgator ===
-||rapidgator.net^$important
-||rg.to^$important
-
-! === BLOCKLIST: Turbobit ===
-||turbobit.net^$important
-||turb.to^$important
-
-! === BLOCKLIST: Other Major File Hosts ===
-||fileupload.com^$important
-||upload.ee^$important
-||uptobox.com^$important
-||uptostream.com^$important
-||uptodown.com^$important
+||zippyshare.com^$important
 ||openload.co^$important
 ||oload.tv^$important
 ||openload.io^$important
 ||datafilehost.com^$important
 ||dfh.to^$important
-||0x0.st^$important
-||catbox.moe^$important
-||buzzheavier.com^$important
-||pixeldrain.com^$important
-||pixeldrain.net^$important
-||pixeldrain-bypass.cybar.xyz^$important
-||mixdrop.ag^$important
-||mixdrop.my^$important
-||megadb.net^$important
-||megadb.xyz^$important
-||fs18.megadb.xyz^$important
-||filecrypt.co^$important
-||filecrypt.cc^$important
-||_9666._https.cnl.filecrypt.cc^$important
-||downr.org^$important
-||clicknupload.click^$important
 
-! === BLOCKLIST: Cloud Transfer / Temp Sharing ===
+! === Mainstream Cloud File Hosts ===
+||mega.nz^$important
+||mega.io^$important
+||mega.co.nz^$important
+||mediafire.com^$important
+||mfi.re^$important
+||mediafirecdn.com^$important
+||4shared.com^$important
+||4shared-china.com^$important
+||4shared.info^$important
+||dropbox.com^$important
+||dropboxusercontent.com^$important
+||dropboxstatic.com^$important
+||wetransfer.com^$important
+||we.tl^$important
+||box.com^$important
+||boxcdn.net^$important
+||box.net^$important
+||pcloud.com^$important
+||pcloud.link^$important
+||pc.cd^$important
+||filefactory.com^$important
+||ff.im^$important
+||uptobox.com^$important
+||uptostream.com^$important
+||uptodown.com^$important
+
+! === Premium / Subscription Warez Hosts ===
+||1fichier.com^$important
+||1fichier.net^$important
+||uploaded.net^$important
+||uploaded.to^$important
+||ul.to^$important
+||rapidgator.net^$important
+||rg.to^$important
+||turbobit.net^$important
+||turb.to^$important
+||fileupload.com^$important
+
+! === Temporary / Anonymous Transfer Sites ===
+||sendspace.com^$important
+||sendspace.pl^$important
 ||multcloud.com^$important
 ||multcloud.net^$important
 ||anonfiles.com^$important
@@ -115,37 +65,51 @@
 ||file.io^$important
 ||transferxl.com^$important
 ||txl.tools^$important
+||smash.to^$important
+||smash.com^$important
+||terashare.com^$important
+||drime.cloud^$important
+||resilio.com^$important
+||downr.org^$important
+||clicknupload.click^$important
 
-! === BLOCKLIST: Image/File Hosting Bypass ===
+! === Bypass / Mirrors / Worker.dev ===
+||pixeldrain.com^$important
+||pixeldrain.net^$important
+||pixeldrain-bypass.cybar.xyz^$important
+||megadb.net^$important
+||megadb.xyz^$important
+||fs18.megadb.xyz^$important
+||filecrypt.co^$important
+||filecrypt.cc^$important
+||_9666._https.cnl.filecrypt.cc^$important
+||coom2.subsonic.workers.dev^$important
+||down.subsonic.workers.dev^$important
+||lr.subsonic.workers.dev^$important
+||kem2.subsonic.workers.dev^$important
+||files.savemp4.red^$important
+||cdn-avatars.hf-mirror.com^$important
+||de5282c3ca0c.edge.sdk.hf-mirror.com^$important
+||sub2unlock.io^$important
+||buzzheavier.com^$important
+
+! === Image / File Hosting Crossovers ===
+||0x0.st^$important
+||catbox.moe^$important
 ||file.garden^$important
 ||i.postimg.cc^$important
 ||i.ibb.co^$important
 ||i.imgur.com^$important
 ||freeimage.host^$important
 ||media.tenor.com^$important
+||mixdrop.ag^$important
+||mixdrop.my^$important
 
-! === BLOCKLIST: Unlock/Gating Services ===
-||sub2unlock.io^$important
-
-! === BLOCKLIST: Video/File Save Mirrors ===
-||files.savemp4.red^$important
-
-! === BLOCKLIST: AI/CDN Mirrors Used for File Hosting ===
-||cdn-avatars.hf-mirror.com^$important
-||de5282c3ca0c.edge.sdk.hf-mirror.com^$important
-
-! === BLOCKLIST: Subsonic Worker File Mirrors ===
-||coom2.subsonic.workers.dev^$important
-||down.subsonic.workers.dev^$important
-||lr.subsonic.workers.dev^$important
-||kem2.subsonic.workers.dev^$important
-
-! === BLOCKLIST: Counters / Trackers in File Sharing ===
+! === Trackers / Counters ===
 ||count.getloli.com^$important
 
 ! === Notes ===
-! - Google Drive explicitly allowed; all others blocked
-! - Includes file hosts, cloud sync, bypass domains, mirrors, and trackers
-! - ModsFire & UnionCrax remain allowed
-! - No duplicates; all enforced with $important
-! - Strict denial of file sharing and circumvention platforms
+! - Grouped by type: legacy, mainstream, warez hosts, temp sharing, mirrors/bypass, image hosts, trackers.
+! - Google Drive & Docs are handled via the main Google Allowlist (not duplicated here).
+! - Includes 2025 services Smash, Terashare, Drime, Resilio.
+! - Strict enforcement with $important across all entries.
