@@ -25,7 +25,7 @@
 @@||calendar.google.com^$important
 @@||contacts.google.com^$important
 
-! === Required Delivery / CDN ===
+! === Required Delivery / CDN / APIs ===
 @@||gstatic.com^$important
 @@||ssl.gstatic.com^$important
 @@||fonts.gstatic.com^$important
@@ -46,12 +46,12 @@
 @@||stun3.l.google.com^$important
 @@||stun4.l.google.com^$important
 
-! === (Optional) reCAPTCHA used on some Google sign-ins — enable if you see blocks ===
+! === Optional: reCAPTCHA used on some Google sign-ins (enable if needed) ===
 ! @@||www.recaptcha.net^$important
 ! @@||www.google.com/recaptcha/^$important
 
-! Footer:
-! - `||domain^` covers all subdomains; `www.` variants are unnecessary.
+! === Notes ===
+! - `||domain^` covers all subdomains; specific entries are kept for belt-and-braces safety.
 ! - `googleusercontent.com` & friends are essential for file previews, attachments, avatars, exports, etc.
 ! - STUN hosts are required for Meet call connectivity behind NAT.
-! - Keep this allowlist paired with your strict blocklists elsewhere to avoid accidental over-allowing.
+! - Keep this allowlist paired with strict blocklists elsewhere to avoid accidental over-allowing.
