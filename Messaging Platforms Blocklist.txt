@@ -1,20 +1,16 @@
-! AdGuard Home - Messaging Platforms Blocklist (Strict)
-! Updated and categorized by Coly & ChatGPT - 2025-08-24
-! Purpose: Disable consumer messaging platforms at DNS level (excluding WhatsApp/Telegram which have dedicated strict files)
+! AdGuard Home - Messaging Platforms Blocklist (Strict, Expanded 2025)
+! Updated and enforced by Coly & ChatGPT - 2025-09-03
+! Purpose: Fully block mainstream & emerging messaging platforms (Signal, WeChat, Viber, Briar, Session, Beeper, Bitchat, etc.)
 
-! === Scope & Notes ===
-! - WhatsApp: will be maintained in its own strict file (not listed here).
-! - Telegram: will be maintained in its own strict file (not listed here).
-! - Facebook Messenger: managed under Social Media filters (not listed here).
-! - Discord: centralized in "Discord Filter.txt".
-! - Snapchat / TikTok / Instagram: centralized in Social Media filters.
-! - All rules include $important as per MindFence policy.
-
-! === Signal (Core, CDN) ===
+! === Signal (Complete Lockdown) ===
 ||signal.org^$important
 ||cdn.signal.org^$important
+||chat.signal.org^$important
+||storage.signal.org^$important
+||updates.signal.org^$important
+||api.directory.signal.org^$important
 
-! === WeChat / Weixin (Core + Primary Web Endpoints) ===
+! === WeChat / Weixin ===
 ||wechat.com^$important
 ||weixin.qq.com^$important
 ||wx.qq.com^$important
@@ -23,7 +19,7 @@
 ||viber.com^$important
 ||viber.me^$important
 
-! === LINE (Apps, CDN) ===
+! === LINE (Apps + CDN) ===
 ||line.me^$important
 ||line-apps.com^$important
 ||line-scdn.net^$important
@@ -41,13 +37,19 @@
 ! === Threema ===
 ||threema.ch^$important
 
-! === ICQ / VK Messaging (Core endpoints) ===
+! === ICQ / VK Messaging ===
 ||icq.com^$important
 ||vk.me^$important
 ||vk.com^$important
 
-! === OPTIONAL: Work / Enterprise Chat (leave disabled unless you want to block them) ===
-! To block these as well, move them out of the comment block and into active rules.
+! === Emerging & Rising Messaging Platforms ===
+||getsession.org^$important     ! Session messenger domain  
+||briarproject.org^$important  ! Briar project domain  
+||beeper.com^$important        ! Beeper universal chat platform  
+||beeper.automattic.ai^$important  ! New Beeper on-device relaunch domain  
+||bitchat.free^$important      ! Bitchat Mesh app by Jack Dorsey  
+
+! === Optional Enterprise Chat (Commented) ===
 ! ||teams.microsoft.com^$important
 ! ||slack.com^$important
 ! ||slack-msgs.com^$important
@@ -55,4 +57,7 @@
 ! ||webex.com^$important
 ! ||zoom.us^$important
 
-! End of file — Intent: Block major consumer messaging platforms while keeping enterprise chat optional. WhatsApp/Telegram have dedicated strict files.
+! === Notes ===
+! - 2025 additions include Session, Briar, Beeper (Automattic), and Bitchat Mesh (Bluetooth mesh messaging).
+! - These platforms bypass traditional servers via mesh, bridges, or local fallback—blocking their domains closes stealth paths.
+! - Gaming and Google allowlists remain unaffected.
