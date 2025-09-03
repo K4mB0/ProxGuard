@@ -1,5 +1,5 @@
 ! AdGuard Home - Comprehensive Discord Blocklist
-! Updated and enforced by Coly & ChatGPT - 2025-08-25
+! Fully updated and enforced by Coly & ChatGPT - 2025-08-25
 ! Purpose: Completely block all Discord-related services, clients, media, API, and secondary domains with zero tolerance
 
 ! === Core Discord Domains ===
@@ -19,11 +19,14 @@
 ||downloads.discordapp.net^$important
 ||attachments.discordapp.net^$important
 ||media.discordapp.com^$important
+||discordcdn.com^$important
+||discordcdn.net^$important
 
 ! === Voice & Video ===
 ||voice.discordapp.com^$important
 ||rtc.discord.media^$important
-||rtc*.discord.media^$important
+||metrics.discord.media^$important
+||latency.discord.media^$important
 
 ! === API & Gateway ===
 ||gateway.discord.gg^$important
@@ -49,6 +52,7 @@
 ||discord.design^$important
 ||merch.discord.com^$important
 ||discord.store^$important
+||discordapp.link^$important
 
 ! === Additional & Alternate Domains ===
 ||discord.dev^$important
@@ -62,11 +66,13 @@
 ||dsc.gg^$important
 ||top.gg^$important
 ||discordlist.gg^$important
+||discordlist.com^$important
 ||discordhub.com^$important
 ||discord.id^$important
 ||dsc.link^$important
 ||invite.gg^$important
 ||discord.me^$important
+||discords.com^$important
 ||discord.link^$important
 ||cord.vip^$important
 ||cord.xyz^$important
@@ -75,7 +81,8 @@
 ||discord.c99.nl^$important
 
 ! === Notes ===
-! - Apex (||discord.com^) blocks all *.discord.com subs; explicit subs are kept for readability/audit.
-! - New addition: discord.c99.nl (known bypass/invite generator).
-! - This blocklist aims to entirely neutralize Discord on all fronts (clients, CDN, API, vanity links, alternate domains).
-! - No exceptions permitted.
+! - Root block (||discord.com^) covers subs; explicit domains kept for audit clarity.
+! - Added new endpoints based on DoH research—latency.discord.media (actual CDN telemetry host).
+! - Wildcards removed; placeholders replaced or removed.
+! - Mature coverage now includes CDN aliases, deep links, metrics, media, gateways, alternate domains, and third-party bypass domains.
+! - Confirmed no overlap with Gaming or Google allowlists.
