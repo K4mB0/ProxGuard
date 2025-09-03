@@ -1,21 +1,21 @@
 ! Title: jami-block.txt
 ! Description: Blocks all known access to Jami (https://jami.net), including messaging, connectivity, usernames, and updates. Effective for desktop & mobile.
-! Last updated: 2025-08-25
+! Last updated: 2025-09-03
 ! Author: Coly & ChatGPT
 
 ! === Core project & legacy domains ===
 ||jami.net^$important
 ||ring.cx^$important
 ||savoirfairelinux.com^$important
-||jami.biz^$important      ! JAMS (Jami Account Management Server)
+||jami.biz^$important          ! JAMS (Jami Account Management Server)
 
 ! === Bootstrap, DHT proxies, name service ===
-||bootstrap.jami.net^$important
+||bootstrap.jami.net^$important   ! default OpenDHT bootstrap (4222/tcp)
 ||bootstrap.ring.cx^$important
 ||dhtproxy.jami.net^$important
 ||dhtproxy2.jami.net^$important
 ||dhtproxy3.jami.net^$important
-||ns.jami.net^$important   ! username ↔ JamiID lookups
+||ns.jami.net^$important          ! username ↔ JamiID lookups
 
 ! === TURN / STUN traversal ===
 ||turn.jami.net^$important
@@ -25,6 +25,7 @@
 ||dl.jami.net^$important
 ||releases.jami.net^$important
 ||packages.jami.net^$important
+||download.jami.net^$important
 
 ! === Daemon/API & service endpoints ===
 ||daemon.jami.net^$important
@@ -40,16 +41,15 @@
 ||cdn.jami.net^$important
 ||media.jami.net^$important
 
-! === Notes ===
-! - AdGuard syntax: `||domain^` blocks root + all subdomains (no `*.` needed).
-! - Blocking DHT bootstrap & proxies prevents the client from joining/maintaining the network. (docs confirm use of bootstrap + DHT proxy) 
-!   Ref: docs on LAN/DHT & proxy usage, and default bootstrap `bootstrap.jami.net:4222`. 
-! - Default TURN is `turn.jami.net` (username/password/realm "ring" in docs) — block to disrupt NAT traversal for calls. 
-! - `ns.jami.net` resolves human-readable usernames; blocking breaks username lookups.
-! - `jami.biz` (JAMS) is enterprise account manager; included to stop managed-org sign-ins.
-
 ! === Optional (heavy) install-source blocking — comment in ONLY if acceptable to block entire stores ===
-! ||snapcraft.io^$important     ! Snap store page hosts Jami package (snapcraft.io/jami)
-! ||flathub.org^$important      ! Flathub hosts net.jami.Jami
-! ||f-droid.org^$important      ! F-Droid hosts Android package cx.ring
-! (Enabling these affects many other apps; prefer OS-level controls if possible.)
+! ||snapcraft.io^$important      ! Snap store page hosts Jami package (snapcraft.io/jami)
+! ||flathub.org^$important       ! Flathub hosts net.jami.Jami
+! ||f-droid.org^$important       ! F-Droid hosts Android package cx.ring
+! (Enabling these affects many other apps; prefer OS-level or MDM controls.)
+
+! === Notes ===
+! - Blocking bootstrap + DHT proxies prevents the client from joining or maintaining the OpenDHT network. Default bootstrap: bootstrap.jami.net:4222.
+! - Blocking ns.jami.net disables human-readable username resolution to Jami IDs.
+! - Blocking turn.jami.net/stun.jami.net breaks NAT traversal for calls and file relays.
+! - jami.biz (JAMS) blocks enterprise enrollments/account management.
+! - All entries use AdGuard syntax (||domain^) and $important for strict enforcement.
