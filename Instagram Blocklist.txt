@@ -1,61 +1,54 @@
 ! AdGuard Home - Locked Instagram Blocklist
-! Updated and enforced by Coly & ChatGPT - 2025-08-25
-! Purpose: Fully block all Instagram content, APIs, services, and related infrastructure
+! Updated and enforced by Coly & ChatGPT - 2025-09-03
+! Purpose: Fully block Instagram content, APIs, services, link shims and media/CDNs across web & mobile.
 
-! === Core Instagram Domains ===
+! === Core & Short Domains ===
 ||instagram.com^$important
 ||www.instagram.com^$important
 ||m.instagram.com^$important
 ||i.instagram.com^$important
-||help.instagram.com^$important
-||blog.instagram.com^$important
-||about.instagram.com^$important
+||instagr.am^$important
 
-! === Instagram CDN & Media Delivery ===
-||cdninstagram.com^$important
-||scontent.cdninstagram.com^$important
+! === Link Shim & Deep-Link Shorteners ===
+||l.instagram.com^$important
+||ig.me^$important
 
-! === Instagram APIs & App Services ===
+! === APIs & Platform Services ===
 ||api.instagram.com^$important
+||graph.instagram.com^$important
 ||platform.instagram.com^$important
 ||api-platform.instagram.com^$important
-||graph.instagram.com^$important
-||black.ish.instagram.com^$important
+||lookaside.instagram.com^$important
 ||tiles.instagram.com^$important
 ||logger.instagram.com^$important
 ||badges.instagram.com^$important
-
-! === Instagram Ads & Analytics ===
-||business.instagram.com^$important
-||ads.instagram.com^$important
-||analytics.instagram.com^$important
-||ads-settings.instagram.com^$important
-||advertisers.instagram.com^$important
-
-! === Authentication & App Login ===
-||login.instagram.com^$important
-||secure.instagram.com^$important
-||oauth.instagram.com^$important
-
-! === Mobile, API, and Proxy Variants ===
-||b.instagram.com^$important
-||z-p3.instagram.com^$important
-||z-p4.instagram.com^$important
-||z-p42.instagram.com^$important
-||z-p243.instagram.com^$important
-||android.instagram.com^$important
-||ios.instagram.com^$important
-||l.instagram.com^$important
-
-! === Extra Instagram Services & Frontends ===
+||help.instagram.com^$important
+||about.instagram.com^$important
 ||privacycenter.instagram.com^$important
 ||wellbeing.instagram.com^$important
 ||creators.instagram.com^$important
 ||live.instagram.com^$important
 ||shop.instagram.com^$important
+||b.instagram.com^$important
+
+! === Media & CDN Delivery (Instagram & Meta-operated) ===
+||cdninstagram.com^$important
+||scontent.cdninstagram.com^$important
+||igcdn.com^$important
+||igsonar.com^$important
+
+! === Shared Meta CDNs often used by Instagram media ===
+||fbcdn.net^$important
+||fbsbx.com^$important
+
+! === Authentication/Login variants ===
+||login.instagram.com^$important
+||secure.instagram.com^$important
+||oauth.instagram.com^$important
 
 ! === Notes ===
-! - Baseline May rules preserved and grouped
-! - No new Instagram-specific bypasses observed in logs (Bibliogram handled in Alternative Front-Ends file)
-! - All entries deduped and aligned
-! - No exceptions permitted
+! - Adds official DM short domain (ig.me), link shim (l.instagram.com), and Lookaside endpoints used by IG, all actively used in 2025.
+! - Blocks Instagram media regardless of region shard (scontent-*.cdninstagram.com); cdninstagram.com covers the rotating hosts.
+! - Includes Meta-shared CDNs (fbcdn.net, fbsbx.com) that IG still serves media/attachments through.
+! - Removed speculative or nonstandard subdomains; apex rules handle any new *.instagram.com hosts automatically.
+! - No overlap with your Google/Gaming allowlists.
