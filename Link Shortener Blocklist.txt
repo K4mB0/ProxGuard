@@ -1,37 +1,39 @@
 ! AdGuard Home - Unlock/Gating Link Shorteners (Strict)
-! Updated and enforced by Coly & ChatGPT - 2025-08-29
-! Purpose: Block monetized “link locker” / “unlock to continue” / ad-gated shorteners used to bypass parental controls or funnel to blocked destinations.
+! Updated and enforced by Coly & ChatGPT - 2025-09-03
+! Purpose: Block monetized “link locker” / “unlock to continue” services and bypassers used to evade parental controls or filters.
 
-! === ACTIVE ===
+! === Active Shortener Lockers ===
 ||ouo.io^$important
+||linkvertise.com^$important
+||work.ink^$important
+||shrinke.earn^$important
+||ogads.com^$important
+||ad-maven.com^$important
 
-! === COMMENTED (enable one-by-one as needed) ===
-! ||linkvertise.com^$important
-! ||work.ink^$important
-! ||rekonise.com^$important
+! === Content Locker Bypass Services ===
+||bypass.city^$important
 
-! === Sub2Unlock Family (multi-TLD) ===
-! ||sub2unlock.io^$important
-! ||sub2unlock.org^$important
-! ||sub2unlock.net^$important
-! ||sub2unlock.me^$important
-
-! === Loot / Gaming-Focused Monetizers & Lockers ===
+! === Optional: Gaming-Focused / Loot-Style Lockers ===
 ! ||lootlabs.gg^$important
 ! ||loot-link.com^$important
 ! ||lootdest.org^$important
 ! ||lootlinks.net^$important
 
-! === Legacy / High-Risk Monetized Shorteners ===
-! ||adf.ly^$important
-! ||adfoc.us^$important
-! ||shorte.st^$important
+! === Optional: Multi-TLD Sub2Unlock Family ===
+! ||sub2unlock.io^$important
+! ||sub2unlock.org^$important
+! ||sub2unlock.net^$important
+! ||sub2unlock.me^$important
 
-! === Optional (broad-use shorteners; usually keep disabled)
+! === Very Broad Shortener Block (Use with caution) ===
 ! ||bit.ly^$important
 ! ||tinyurl.com^$important
 ! ||cutt.ly^$important
 ! ||is.gd^$important
 ! ||t.co^$important
 
-! End of file
+! === Notes ===
+! - **Active**: Only high-risk lockers and bypassers are enabled.
+! - **Optional**: Loot-family and Sub2Unlock can be enabled as they appear in logs.
+! - **Broad block** of generic shorteners is discouraged unless absolutely necessary.
+! - Does not affect Google or Gaming; those use their own allowlists.
