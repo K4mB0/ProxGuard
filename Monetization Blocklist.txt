@@ -1,8 +1,8 @@
 ! AdGuard Home - Monetization & Creator Donation Platform Blocklist
-! Updated and enforced by Coly & ChatGPT - 2025-08-25
-! Purpose: Block platforms used for crowdfunding, donations, creator tipping, and membership services
+! Updated and enforced by Coly & ChatGPT - 2025-09-03
+! Purpose: Block platforms used for crowdfunding, donations, creator tipping, and membership services.
 
-! === Ko-Fi & Payment Gateways ===
+! === Ko-Fi (all known subdomains & mirrors) ===
 ||ko-fi.com^$important
 ||kofi.com^$important
 ||storage.ko-fi.com^$important
@@ -30,7 +30,6 @@
 
 ! === Patreon ===
 ||patreon.com^$important
-||www.patreon.com^$important
 ||api.patreon.com^$important
 ||cdn.patreon.com^$important
 ||blog.patreon.com^$important
@@ -38,26 +37,29 @@
 
 ! === Buy Me a Coffee ===
 ||buymeacoffee.com^$important
-||www.buymeacoffee.com^$important
 ||cdn.buymeacoffee.com^$important
 ||assets.buymeacoffee.com^$important
 ||api.buymeacoffee.com^$important
 
 ! === SubscribeStar ===
 ||subscribestar.com^$important
-||www.subscribestar.com^$important
 ||api.subscribestar.com^$important
 ||static.subscribestar.com^$important
 
-! === Other Creator Monetization & Adult Platforms ===
-||onlyfans.com^$important
-||fansly.com^$important
-||manyvids.com^$important
+! === Other Creator / Commerce Platforms ===
 ||gumroad.com^$important
 ||itch.io^$important
 ||creatorlink.net^$important
+||liberapay.com^$important
+||creator-spring.com^$important
+||fanbox.cc^$important
 
-! === Stripe Payment Infrastructure (used across platforms) ===
+! === Adult Monetization Platforms ===
+||onlyfans.com^$important
+||fansly.com^$important
+||manyvids.com^$important
+
+! === Stripe Payment Infrastructure (cross-platform) ===
 ||stripe.com^$important
 ||stripe.network^$important
 ||js.stripe.com^$important
@@ -74,7 +76,8 @@
 ||radar.stripe.com^$important
 
 ! === Notes ===
-! - PayPal entries removed (covered in dedicated PayPal blocklist).
-! - Covers Ko-Fi, Patreon, BuyMeACoffee, SubscribeStar, Gumroad, Itch.io.
-! - Includes adult monetization sites (OnlyFans, Fansly, ManyVids).
-! - Stripe infra blocked here because it underpins most creator donation platforms.
+! - PayPal entries remain separate (dedicated PayPal blocklist).
+! - Covers Ko-Fi, Patreon, BuyMeACoffee, SubscribeStar, Gumroad, Itch.io, Liberapay, CreatorSpring, Fanbox.
+! - Explicit adult monetization (OnlyFans, Fansly, ManyVids) fully included.
+! - Stripe infra included here because it underpins donations/payments for most creator platforms.
+! - Gaming and Google allowlists unaffected.
