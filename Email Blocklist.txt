@@ -1,34 +1,11 @@
-! AdGuard Home - Gmail Allowlist + Global Email Blocking
-! Updated and maintained by Coly & ChatGPT - 2025-08-25
-! Purpose: Allow Gmail services only; fully block all alternative email platforms, clients, and email infrastructure
+! AdGuard Home - Global Email Blocklist (Strict Gmail-Only)
+! Updated and enforced by Coly & ChatGPT - 2025-08-25
+! Purpose: Block ALL non-Gmail email providers, services, and infrastructure.
 
-! === ALLOWLIST: Google / Gmail ===
-@@||gmail.com^$important
+! === Legacy Gmail Alias (Allow) ===
 @@||googlemail.com^$important
-@@||mail.google.com^$important
-@@||smtp.gmail.com^$important
-@@||imap.gmail.com^$important
-@@||pop.gmail.com^$important
-@@||accounts.google.com^$important
-@@||myaccount.google.com^$important
-@@||googleapis.com^$important
-@@||gstatic.com^$important
-@@||google.com^$important
-@@||www.google.com^$important
-@@||fonts.gstatic.com^$important
-@@||contacts.google.com^$important
-@@||calendar.google.com^$important
-@@||drive.google.com^$important
-@@||docs.google.com^$important
-@@||meet.google.com^$important
-@@||m.gmail.com^$important
-@@||mobile.gmail.com^$important
-@@||oauth2.googleapis.com^$important
-@@||content.googleapis.com^$important
-@@||apis.google.com^$important
-@@||www.googleapis.com^$important
 
-! === BLOCKLIST: Mainstream & Free Email Providers ===
+! === BLOCK: Mainstream & Free Email Providers ===
 ||outlook.com^$important
 ||hotmail.com^$important
 ||live.com^$important
@@ -46,8 +23,13 @@
 ||mailbox.org^$important
 ||kolabnow.com^$important
 ||posteo.de^$important
+||gmx.com^$important
+||gmx.net^$important
+||gmx.de^$important
+||gmx.at^$important
+||gmx.ch^$important
 
-! === BLOCKLIST: ISP/Corporate Email Domains ===
+! === BLOCK: ISP/Corporate Email Domains ===
 ||att.net^$important
 ||comcast.net^$important
 ||verizon.net^$important
@@ -66,19 +48,18 @@
 ||ionos.com^$important
 ||1and1.com^$important
 
-! === BLOCKLIST: Privacy-Focused & Secure Email Services ===
+! === BLOCK: Privacy & Secure Email Providers ===
 ||proton.me^$important
 ||tutanota.io^$important
-||mailfence.com^$important
 ||riseup.net^$important
 ||ctemplar.com^$important
-||posteo.de^$important
-||startmail.com^$important
 
-! === BLOCKLIST: Disposable / Anonymous Email Platforms ===
+! === BLOCK: Disposable / Anonymous Email Platforms ===
 ||temp-mail.org^$important
 ||tempmailgen.com^$important
 ||guerrillamail.com^$important
+||10minutemail.com^$important
+||yopmail.com^$important
 ||fakeinbox.com^$important
 ||burnnermail.com^$important
 ||throwawaymail.com^$important
@@ -88,7 +69,6 @@
 ||getnada.com^$important
 ||dispostable.com^$important
 ||trashmail.com^$important
-||tuta.com^$important
 ||app.tuta.com^$important
 ||api.tuta.com^$important
 ||w16.api.tuta.com^$important
@@ -97,7 +77,7 @@
 ||tmailor.com^$important
 ||temp-mail.io^$important
 
-! === BLOCKLIST: Email Infrastructure & Marketing Services ===
+! === BLOCK: Email Infrastructure & Marketing Services ===
 ||emailsrvr.com^$important
 ||sendgrid.net^$important
 ||mailgun.com^$important
@@ -111,13 +91,16 @@
 ||klaviyo.com^$important
 ||constantcontact.com^$important
 
-! === BLOCKLIST: Thunderbird New Service ===
+! === BLOCK: Thunderbird New Service ===
 ||thundermail.com^$important
 ||tb.pro^$important
 
+! === BLOCK: Experimental/Alternate Email Platforms ===
+||twoblade.com^$important
+
 ! === Notes ===
-! - Fully allows Gmail ecosystem while absolutely blocking all others.
-! - Covers mainstream free mail, ISP-hosted email, secure/private mail, disposable/disposable mail.
-! - Includes marketing and transactional email infrastructure.
-! - Added new domain thundermail.com for Thunderbird’s upcoming service.
-! - No duplicates; $important flag applied everywhere.
+! - Gmail/Workspace is already covered by Google Allowlist (no duplication here).
+! - Legacy alias googlemail.com allowed to prevent lockouts.
+! - Absolutely no access to any other mail services, providers, infra, or disposable inboxes.
+! - GMX domains (gmx.com/.net/.de/.at/.ch) added.
+! - All rules enforced with $important for strictest possible denial.
