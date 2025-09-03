@@ -1,14 +1,14 @@
 ! AdGuard Home - Optimized Adult AI Roleplay Blocklist
-! Updated and categorized by Coly & ChatGPT - 2025-08-25
+! Fully updated and categorized by Coly & ChatGPT - 2025-08-25
 ! Purpose: Block AI chat/roleplay services used for NSFW, pseudo-romantic, and fetish scenarios
 
-! === Ollama.AI ===
+! === Ollama ===
 ||ollama.com^$important
 
 ! === Genit.AL ===
 ||genit.al^$important
 
-! === Open.AI (Communities) ===
+! === OpenAI (Communities) ===
 ||openaicommunities.space^$important
 
 ! === Character.AI and Mirrors ===
@@ -23,6 +23,7 @@
 ||characterai.org^$important
 ||charakter.ai^$important
 ||t3.chat^$important
+||c.ai^$important
 
 ! === Wyvern Chat Family ===
 ||wyvernchat.com^$important
@@ -32,9 +33,11 @@
 ||blog.wyvern.chat^$important
 
 ! === Featherless AI ===
+||featherless.ai^$important
 ||api.featherless.ai^$important
 
 ! === Uwu AI ===
+||uwu.ai^$important
 ||sacrilegious.uwu.ai^$important
 
 ! === JanitorAI ===
@@ -80,12 +83,17 @@
 ||scenarios.aidungeon.io^$important
 ||latitude.io^$important
 
-! === Hugging Face & Hosting Repositories ===
+! === Hugging Face (Complete Block) ===
 ||huggingface.co^$important
 ||spaces.huggingface.co^$important
 ||datasets-server.huggingface.co^$important
 ||cdn-lfs.huggingface.co^$important
 ||cdn-assets.huggingface.co^$important
+||api.huggingface.co^$important
+||models.huggingface.co^$important
+||s3.amazonaws.com/huggingface.co^$important
+||hf.space^$important
+||*.hf.space^$important
 
 ! === Waifu / Relationship AI ===
 ||aiwaifu.dev^$important
@@ -148,8 +156,11 @@
 ||personalityforge.com^$important
 
 ! === Notes ===
-! - Baseline May rules preserved
-! - New families merged (Wyvern, Featherless, Uwu, Qwen/Qianwen)
-! - Hugging Face wildcard fixed (||*.huggingface.co^ removed)
-! - Additional platforms regrouped into Waifu, Clients, Model Routers, General Platforms, NSFW Generators
-! - Duplicates removed, $important standardized
+! - Fully updated 2025-08-25 by Coly & ChatGPT
+! - Organized into families (Character.AI, Replika, JanitorAI, KoboldAI, NovelAI, AI Dungeon, Waifu/Relationship AI, Clients/Front-Ends, Routers, Hugging Face, etc.)
+! - Belt-and-braces coverage: both root domains and critical subdomains are blocked
+! - New additions include Wyvern, Featherless, Uwu, Qwen/Qianwen, and modern front-ends (SillyTavern, ProxiAI, etc.)
+! - Hugging Face is completely blocked (all services, subdomains, CDNs) — no exceptions
+! - This list is focused on AI services used for adult, fetish, or pseudo-romantic roleplay scenarios
+! - Cross-checked against Gaming and Google allowlists to ensure no conflicts
+! - All rules standardized with $important for maximum enforcement
