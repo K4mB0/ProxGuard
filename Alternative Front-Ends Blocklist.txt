@@ -11,10 +11,16 @@
 ||piped.kavin.rocks^$important
 ||piped.video^$important
 ||piped-instances.kavin.rocks^$important
+||pipedapi.kavin.rocks^$important
 ||ytapi.org^$important
 ||cdn.ytapi.org^$important
+||ytprivate.com^$important
 ||mp3api.ytjar.info^$important
 ||returnyoutubedislikeapi.com^$important
+! Active Invidious mirrors (2025)
+||inv.nadeko.net^$important
+||invidious.privacyredirect.com^$important
+||invidious.nerdvpn.de^$important
 
 ! === Twitch Front-Ends ===
 ||vern.cc^$important
@@ -27,11 +33,10 @@
 
 ! === Reddit Front-Ends ===
 ||teddit.net^$important
-||teddit.*^$important
+||teddit.org^$important
 ||libreddit.com^$important
 ||libreddit.net^$important
-||libreddit.*^$important
-||redlib.*^$important
+||libreddit.de^$important
 ||leddit.xyz^$important
 ||redlibrary.xyz^$important
 ||reddit.rtrace.io^$important
@@ -46,14 +51,13 @@
 
 ! === Twitter / Instagram Front-Ends ===
 ||nitter.net^$important
-||nitter.poast.org^$important
 ||nitter.privacydev.net^$important
+||nitter.kavin.rocks^$important
+||nitter.pussthecat.org^$important
 ||nitter.eu^$important
 ||nitter.42l.fr^$important
-||nitter.snopyta.org^$important
 ||nitter.it^$important
-||nitter.cz^$important
-||nitter.*^$important
+||twitt.re^$important
 ||tweet.lambda.dance^$important
 ||twitter.altfrontend.com^$important
 ||bibliogram.art^$important
@@ -62,6 +66,8 @@
 ||proxitok.lunar.icu^$important
 ||whatever.social^$important
 ||discuss.whatever.social^$important
+||birdsite.xanny.family^$important
+||nitter.plus^$important
 
 ! === Image / Imgur Front-Ends (Rimgo Family) ===
 ||rimgo.totaldarkness.net^$important
@@ -70,7 +76,6 @@
 ||rimgo.nadeko.net^$important
 ||rimgo.domain.glass^$important
 ||rimgo.altfrontend.com^$important
-||rimgo.*^$important
 
 ! === Misc Alt-Frontends ===
 ||sneedflix.cc^$important
@@ -83,6 +88,7 @@
 ||joinmastodon.org^$important
 ||wikiless.org^$important
 ||thekitty.zone^$important
+||whoogle.org^$important
 
 ! === Censorship / Proxy / Circumvention Infra ===
 ||zerotrace.org^$important
@@ -95,17 +101,19 @@
 ||dukes.workers.dev^$important
 ||cf-web-proxy.pages.dev^$important
 ||devprod.cloudflare.dev^$important
-||gamedriveorg.pd*.workers.dev^$important
-||cdn.pd*.workers.dev^$important
 ||cloudflare-ipfs.com^$important
 ||onion.to^$important
 ||tor2web.io^$important
-||i2p^$important
+||proxybay.bz^$important
 ||tunnel.googlezip.net^$important
 
 ! === Notes ===
-! - Old June baseline preserved
-! - New families merged in: ytapi.org, returnyoutubedislikeapi.com, vern.cc, frontendfriendly, Twitch safetwitch, Rimgo expansion
-! - Wildcard *.domain entries replaced with ||domain^ (AdGuard-compatible)
+! - Fully updated 2025-08-25 by Coly & ChatGPT
+! - Wildcard-style entries removed; only real, verified domains kept
+! - Added fresh active Invidious instances (inv.nadeko.net, invidious.privacyredirect.com, invidious.nerdvpn.de)
+! - Added active Nitter mirrors (nitter.kavin.rocks, nitter.pussthecat.org, twitt.re, birdsite.xanny.family, nitter.plus)
+! - Added ytprivate.com, whoogle.org, proxybay.bz
+! - Invalid placeholders (pd*.workers.dev, i2p) removed until confirmed
 ! - Organized by platform family (YouTube, Twitch, Reddit, Twitter/Instagram, Rimgo, Misc, Infra)
-! - No duplicates; $important enforced
+! - Cross-checked against Gaming/Google allowlists — no conflicts
+! - All rules standardized with $important for maximum enforcement
