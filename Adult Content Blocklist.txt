@@ -1,5 +1,5 @@
 ! AdGuard Home - Optimized Adult Content Blocklist
-! Updated and enforced by Coly & ChatGPT - 2025-08-25
+! Fully updated and enforced by Coly & ChatGPT - 2025-08-25
 ! Purpose: Complete denylist for explicit adult content, cam sites, VR, AI-powered and creator platforms
 
 ! === Major Tube & Free Platforms ===
@@ -18,6 +18,7 @@
 ||tube8.com^$important
 ||youjizz.com^$important
 ||spankbang.com^$important
+||spankbang.party^$important
 ||beeg.com^$important
 ||porntrex.com^$important
 ||pornone.com^$important
@@ -34,10 +35,12 @@
 ||pornhd.com^$important
 ||pornerbros.com^$important
 ||pornhat.com^$important
+||pornhat.one^$important
 ||pornktube.com^$important
 ||pornmate.com^$important
 ||porntube.com^$important
 ||pornwhite.com^$important
+||pornwatchers.com^$important
 ||perfectgirls.net^$important
 ||pichunter.com^$important
 ||playvids.com^$important
@@ -84,6 +87,9 @@
 ||streamate.com^$important
 ||naked.com^$important
 ||slutroulette.com^$important
+||stripchat.com^$important
+||camwhores.tv^$important
+||megacams.com^$important
 
 ! === Creator-Driven Adult Platforms ===
 ||fetlife.com^$important
@@ -95,7 +101,8 @@
 ||of-cdn.com^$important
 ||fansly.com^$important
 ||manyvids.com^$important
-||fancentro.com^$important :contentReference[oaicite:2]{index=2}
+||fancentro.com^$important
+||fansoda.com^$important
 
 ! === Image Boards & Adult Forums ===
 ||rule34.xxx^$important
@@ -105,7 +112,8 @@
 ||sankakucomplex.com^$important
 
 ! === VR / Immersive Adult Platforms ===
-||sexlikereal.com^$important :contentReference[oaicite:3]{index=3}
+||sexlikereal.com^$important
+||vrporn.com^$important
 
 ! === Image / CDN Delivery Sites ===
 ||redgifs.com^$important
@@ -126,8 +134,10 @@
 ||etahub.com^$important
 
 ! === Emerging AI Tooling & Deepfake Platforms ===
-||grok.imagine^$important (if specific domain; placeholder)
-||GPTease.*^$important ; AI tools used in adult content contexts :contentReference[oaicite:4]{index=4}
+||pornpen.ai^$important
+||pornpen.net^$important
+! Placeholder: grok.imagine (verify actual domain before enabling)
+! Placeholder: GPTease domains (verify actual domains before enabling)
 
 ! === Legacy or Gray-Area Domains (Optional) ===
 ||4chan.org^$important
@@ -143,10 +153,12 @@
 ||spankwire.com^$important
 ||drtuber.com^$important
 ||sleazyneasy.com^$important
+||8tube.xxx^$important
 
 ! === Notes ===
-! - Baseline preserved and grouped
-! - Added emerging platforms: FanCentro (verified), SexLikeReal VR
-! - Added placeholder for AI deepfake (Grok/GPTease)
-! - Duplicates removed; wildcard *.domain replaced to adhere to AdGuard
-! - Target: absolute denial of all adult content channels
+! - Fully updated 2025-08-25 by Coly & ChatGPT
+! - Categorized: Tubes, Premium Networks, Cams, Creator Platforms, Forums, VR, Image/CDN, Ads, AI/Deepfake
+! - Expanded with new domains: StripChat, CamWhores, Fansoda, VRPorn, PornPen, PornWatchers, PornHat mirrors
+! - Syntax cleaned: removed stray markup, corrected placeholders
+! - Placeholders left as comments until real domains confirmed (Grok, GPTease)
+! - Goal: absolute denial of all adult content channels, with belts-and-braces coverage
