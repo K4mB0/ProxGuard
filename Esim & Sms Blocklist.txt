@@ -1,16 +1,19 @@
 ! AdGuard Home - SMS & eSIM Verification Bypass Blocklist
-! Updated and enforced by Coly & ChatGPT - 2025-08-25
-! Purpose: Block services offering anonymous or bypass SMS verification, including mobile app platforms and eSIM-based circumvention
+! Fully updated by Coly & ChatGPT - 2025-08-25
+! Purpose: Block services offering anonymous or bypass SMS verification and eSIM-based circumvention.
 
 ! === Online SMS Verification Providers ===
 ||onlinesim.io^$important
 ||sms-man.com^$important
 ||zadarma.com^$important
 ||5sim.net^$important
+||5sim.biz^$important
 ||sms-activate.org^$important
 ||online-sms.org^$important
 ||smsbest.ru^$important
-||5sim.biz^$important
+||smspinverify.com^$important
+||majorphones.com^$important
+||sms-activate.io^$important
 ||callhippo.com^$important
 ||krispcall.com^$important
 ||quackr.io^$important
@@ -36,6 +39,8 @@
 ||freitempsms.com^$important
 ||mytrashmobile.com^$important
 ||sms-verification.com^$important
+||smsotpverify.com^$important
+||smspool.com^$important
 
 ! === Mobile App / Virtual Number Services ===
 ||textnow.com^$important
@@ -45,21 +50,22 @@
 ||sideline.com^$important
 ||phoner.com^$important
 ||dingtone.me^$important
+||hushed.com^$important
+||burnerapp.com^$important
+||cloaked.com^$important
+||cloudsim.io^$important
+||coverme.com^$important
 
-! === New Verification Services (2025 Additions) ===
-||smsotpverify.com^$important
-||smspool.com^$important
-||mobilesms.io^$important
-||textverified.com^$important
-||quackr.io^$important
+! === Paid API / Enterprise Bypass Services ===
+||pvaverify.com^$important
 
-! === eSIM / Mobile Privacy Providers (For Monitoring) ===
+! === eSIM / Mobile Privacy Providers (Monitor) ===
 ||saily.com^$important
 ||instabridge.com^$important
 ||nomad.com^$important
 
 ! === Notes ===
-! - Baseline list preserved and grouped.
-! - New additions (smsotpverify, smspool, mobilesms.io, textverified, quackr.io) were added based on widespread 2025 references.
-! - eSIM providers (Saily, Instabridge, Nomad) included as 'monitor' entries—they can act as bypass platforms via integrated VPN/data access.
-! - Deduplicated; $important flag standardized across all entries.
+! - New 2025 additions: smspinverify.com, textverified.com, majorphones.com, sms-activate.io, receive-sms-online.com, FreeOnlinePhone.org, Pinger Textfree Web, virtual number apps (Hushed, Burner, Cloaked, CloudSIM)
+! - Block covers all categories: Web SMS receivers, mobile virtual number apps, enterprise bypass APIs
+! - eSIM providers flagged for monitoring due to potential circumvention capability
+! - Duplicate domains deduplicated; all rules enforced with $important
