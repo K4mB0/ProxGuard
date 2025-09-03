@@ -23,8 +23,10 @@
 ||hingecdn.com^$important
 ||grindrcdn.com^$important
 ||okcupidcdn.com^$important
+||okcupidassets.com^$important
 ||matchcdn.com^$important
 ||pofcdn.com^$important
+||plentyoffish.net^$important
 
 ! === API & Platform Services ===
 ||api.gotinder.com^$important
@@ -83,12 +85,31 @@
 ||herapp.com^$important
 ||feeld.co^$important
 ||taimi.com^$important
+||blued.com^$important
+||tantanapp.com^$important
+||muzmatch.com^$important
+||muzmatch.app^$important
+||muzz.com^$important
+||salams.app^$important
+||wink.com^$important
 
 ! === Affair / Sugar Dating Platforms ===
 ||ashleymadison.com^$important
 ||seeking.com^$important
+||seekingarrangement.com^$important
 ||whatsyourprice.com^$important
 ||xmeets.com^$important
 ||victoriamilan.com^$important
 ||gleeden.com^$important
-||sugardaddymeet.co
+||sugardaddymeet.co^$important
+||richmeetbeautiful.com^$important
+||establishedmen.com^$important
+
+! === Notes ===
+! - Fully updated 2025-08-25 by Coly & ChatGPT
+! - Major apps covered (Tinder, Bumble, Badoo, Hinge, Grindr, OkCupid, Match, POF) plus their CDNs, APIs, auth, chat, and analytics
+! - Expanded with niche and newer apps: Blued, Tantan, Muzz, Salams, Wink
+! - Affair/sugar platforms extended with SeekingArrangement, RichMeetBeautiful, EstablishedMen
+! - CDN domains for OkCupid and POF added
+! - Fixed syntax issue (sugardaddymeet.co rule corrected)
+! - All rules standardized with $important for maximum enforcement
