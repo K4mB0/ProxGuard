@@ -16,6 +16,7 @@
 @@||smtp.gmail.com^$important
 @@||imap.gmail.com^$important
 @@||pop.gmail.com^$important
+@@||googlemail.com^$important
 
 ! === Workspace Apps ===
 @@||classroom.google.com^$important
