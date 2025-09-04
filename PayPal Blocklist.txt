@@ -1,6 +1,6 @@
 ! AdGuard Home - PayPal Blocking Filter
-! Updated and enforced by Coly & ChatGPT - 2025-08-25
-! Purpose: Fully block PayPal and all related services (core, APIs, apps, regional, and subsidiaries)
+! Updated and enforced by Coly & ChatGPT - 2025-09-03
+! Purpose: Fully block PayPal and all related services (core, APIs, apps, regional, and subsidiaries).
 
 ! === Core PayPal Domains ===
 ||paypal.com^$important
@@ -9,6 +9,9 @@
 ||paypal-communication.com^$important
 ||paypal-survey.com^$important
 ||paypalcommunity.com^$important
+||paypalcorp.com^$important
+||pypl.com^$important
+||paypalnet.com^$important
 
 ! === API & Service Endpoints ===
 ||api.paypal.com^$important
@@ -98,6 +101,6 @@
 ||api.hyperwallet.com^$important
 
 ! === Notes ===
-! - Deduped: `www.` subdomains omitted since `||domain^` already covers them.
-! - Added PayPal subsidiaries: Braintree, Xoom, Venmo, Hyperwallet.
-! - Expanded donation domains: charity.paypal.com, fundraiser.paypal.com.
+! - Stripe removed (covered in Monetization/Creator list).
+! - Covers PayPal core, APIs, checkout, mobile apps, regional domains, and subsidiaries (Braintree, Venmo, Xoom, Hyperwallet).
+! - All entries enforced with $important.
