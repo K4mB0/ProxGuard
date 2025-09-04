@@ -1,49 +1,51 @@
 ! AdGuard Home - Locked Twitter/X Blocklist
-! Fully enforced by Coly & ChatGPT - 2025-08-25
-! Purpose: Absolute block of Twitter/X ecosystem—websites, APIs, media, apps, redirects
+! Fully enforced by Coly & ChatGPT – 2025-09-04
+! Purpose: Absolute block of X (Twitter) — websites, APIs, media/CDNs, embeds, apps, ads, business/dev portals, and shorteners.
 
-! === Core Domains ===
-||twitter.com^$important
+! === Core Domains & Shortener ===
 ||x.com^$important
+||twitter.com^$important
 ||t.co^$important
-||twimg.com^$important
 ||twttr.com^$important
 
-! === CDN & Media Delivery ===
+! === Media/CDN (twimg) ===
+||twimg.com^$important
 ||abs.twimg.com^$important
 ||pbs.twimg.com^$important
 ||video.twimg.com^$important
 ||ton.twimg.com^$important
-||upload.twitter.com^$important
-||media.twitter.com^$important
 
-! === APIs, Login & OAuth ===
+! === Embeds, Widgets, and Syndication ===
+||platform.twitter.com^$important
+||publish.twitter.com^$important
+||syndication.twitter.com^$important
+||cdn.syndication.twimg.com^$important
+
+! === APIs & Login/OAuth ===
 ||api.twitter.com^$important
 ||api-ssl.twitter.com^$important
+||api.x.com^$important
 ||oauth.twitter.com^$important
 ||sso.twitter.com^$important
-||platform.twitter.com^$important
+||upload.twitter.com^$important
+
+! === Business, Ads, Developer, Help, Status ===
+||business.x.com^$important
+||ads.x.com^$important
+||developer.x.com^$important
+||docs.x.com^$important
+||help.x.com^$important
+||status.twitter.com^$important
+||blog.twitter.com^$important
+||support.twitter.com^$important
+||help.twitter.com^$important
+
+! === X Pro / TweetDeck ===
+||pro.x.com^$important
+||pro.twitter.com^$important
 ||tweetdeck.twitter.com^$important
 
-! === Ads, Analytics & Tracking ===
-||analytics.twitter.com^$important
-||ads-api.twitter.com^$important
-||advertising.twitter.com^$important
-||cdn.syndication.twimg.com^$important
-||syndication.twitter.com^$important
-
-! === Business, Developer & Support ===
-||business.twitter.com^$important
-||dev.twitter.com^$important
-||developer.twitter.com^$important
-||cards-dev.twitter.com^$important
-||blog.twitter.com^$important
-||status.twitter.com^$important
-||help.twitter.com^$important
-||support.twitter.com^$important
-
 ! === Notes ===
-! - Covers legacy Twitter domains and fully embraces the shift to x.com (forced redirects handled).
-! - Duplicate entries for `www.` subdomains removed for clarity.
-! - No missing or new domains detected per latest sources.
-! - This setup ensures zero access via web, apps, widgets, or edge networks.
+! - api.x.com + developer/docs/help/business.x.com cover the rebranded API/docs/portals now served on X domains. 
+! - publish.twitter.com and cdn.syndication.twimg.com power tweet embeds; blocking them prevents third-party site widgets from loading tweets.
+! - Nitter/alt front-ends are handled in your Alt-Frontends blocklist to avoid duplication.
