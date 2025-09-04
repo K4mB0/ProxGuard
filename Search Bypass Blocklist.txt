@@ -1,12 +1,13 @@
 ! AdGuard Home - Search Bypass Master Blocklist
-! Fully enforced by Coly & ChatGPT - 2025-08-25
-! Purpose: Block DuckDuckGo, private search engines, and alt/meta-search services used to bypass parental or content filtering
+! Fully enforced by Coly & ChatGPT - 2025-09-03
+! Purpose: Block DuckDuckGo, private/meta-search engines, self-hosted frontends, and AI search wrappers that bypass filtering. 
+! Reddit-related frontends/mirrors are maintained separately in the Reddit Lockdown file.
 
-! === DuckDuckGo Core & Services ===
+! === DuckDuckGo (Core + Services + Mirrors) ===
 ||duckduckgo.com^$important
-||duck.co^$important
 ||duck.com^$important
 ||ddg.gg^$important
+||duck.co^$important
 ||html.duckduckgo.com^$important
 ||lite.duckduckgo.com^$important
 ||images.duckduckgo.com^$important
@@ -15,21 +16,20 @@
 ||mobile-api.duckduckgo.com^$important
 ||external-content.duckduckgo.com^$important
 ||proxy.duckduckgo.com^$important
-||duckduckgo-owned-server.com^$important
-||duckduckgo.startpageapi.com^$important
-||ddg-api.herokuapp.com^$important
 ||duckduckgo.eu.org^$important
 ||start.duckduckgo.com^$important
 ||next.duckduckgo.com^$important
-||unduck.link^$important
 ||improving.duckduckgo.com^$important
 ||privacy-test-pages.duckduckgo.com^$important
+||unduck.link^$important
+||ddg-api.herokuapp.com^$important
+||duckduckgo.startpageapi.com^$important
 
 ! === Startpage / Ixquick ===
 ||startpage.com^$important
+||startpage.io^$important
 ||ixquick.com^$important
 ||ixquick.eu^$important
-||startpage.io^$important
 
 ! === Qwant ===
 ||qwant.com^$important
@@ -47,7 +47,7 @@
 ||swisscows.com^$important
 ||swisscows.ch^$important
 
-! === Mojeek / MetaGer ===
+! === Mojeek & MetaGer ===
 ||mojeek.com^$important
 ||metager.org^$important
 ||metager.de^$important
@@ -61,7 +61,7 @@
 ||search.disconnect.me^$important
 ||oscobo.co.uk^$important
 
-! === Self-Hosted & Alt Front-Ends ===
+! === Self-Hosted & Open-Source Front-Ends ===
 ||searx.be^$important
 ||searx.space^$important
 ||searx.work^$important
@@ -71,12 +71,22 @@
 ||searx.info^$important
 ||searx.xyz^$important
 ||searxng.org^$important
+||searxng.site^$important
+||searx.tiekoetter.com^$important
 ||whoogle.net^$important
+||whoogle.io^$important
+||whoogle.xyz^$important
 ||whooglesearch.net^$important
 
+! === AI-Powered Search Wrappers (2025 Rising) ===
+||perplexity.ai^$important
+||you.com^$important
+||phind.com^$important
+||komo.ai^$important
+||andisearch.com^$important
+
 ! === Notes ===
-! - Baseline DuckDuckGo rules preserved and expanded with alt/mirrors
-! - Includes all major "privacy search engines" (Startpage, Qwant, Mojeek, MetaGer, Ecosia, Swisscows, Brave)
-! - Captures self-hosted and open-source alternatives (Searx, Whoogle)
-! - No duplicates; $important standardized
-! - Intent: total denial of search-based filter bypass
+! - Reddit mirrors/frontends removed (now exclusively in Reddit Lockdown filter).
+! - SearXNG, Whoogle, and other self-hosted search proxies kept here.
+! - AI-based search engines (Perplexity, You.com, Phind, Komo, Andi) included.
+! - Works in tandem with the "Locked Search Engines Blocklist" to enforce Google-only search.
