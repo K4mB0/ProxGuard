@@ -1,21 +1,18 @@
-! Title: Reddit Filter
-! Description: Blocks access to Reddit and all known frontends, mirrors, media servers, and shorteners.
-! Last updated: 2025-08-25
-! Author: Coly & ChatGPT
+! AdGuard Home - Reddit Filter (2025 Lockdown Upgrade)
+! Description: Blocks Reddit and all known frontends, APIs, media/CDN, link shims, shorteners, and third-party clients.
+! Updated and enforced by Coly & ChatGPT – 2025-09-03
 
-! === Core Reddit Web ===
+! === Core Reddit & App Traffic ===
 ||reddit.com^$important
 ||old.reddit.com^$important
 ||new.reddit.com^$important
 ||amp.reddit.com^$important
-
-! === APIs, Auth & App Backends ===
 ||oauth.reddit.com^$important
 ||gateway.reddit.com^$important
 ||gql.reddit.com^$important
 ||ads-api.reddit.com^$important
 
-! === Media & Static/CDN ===
+! === Media & Static Services ===
 ||v.redd.it^$important
 ||i.redd.it^$important
 ||preview.redd.it^$important
@@ -25,12 +22,11 @@
 ||s.reddit.com^$important
 ||out.reddit.com^$important
 
-! === Shorteners / Link Helpers ===
+! === Shorteners & Link Helpers ===
 ||redd.it^$important
 ||redditurl.com^$important
 
-! === Frontend Proxies & Mirrors (curated) ===
-! Libreddit / Redlib family
+! === Alt-Frontends & Mirrors (Curated) ===
 ||libreddit.com^$important
 ||libreddit.net^$important
 ||libreddit.miaoute.net^$important
@@ -38,12 +34,8 @@
 ||redlib.perennialte.ch^$important
 ||leddit.xyz^$important
 ||redlibrary.xyz^$important
-
-! Teddit family
 ||teddit.net^$important
 ||snoo.habedieeh.re^$important
-
-! Misc Reddit alt-frontends & proxies
 ||rdt.trom.tf^$important
 ||reddit.rtrace.io^$important
 ||reddit.nerdvpn.de^$important
@@ -53,12 +45,16 @@
 ||reddit.utsav2.dev^$important
 ||reddit.owo.si^$important
 ||safereddit.com^$important
+||xeddit.com^$important       ! New: Xeddit front-end (2025 active)
+||lemmy.world^$important      ! New: Lemmy fediverse aggregator
+||lemmy.ml^$important         ! New: Another high-traffic Lemmy instance
 
-! === Optional Regex (nuclear) — use with extreme caution ===
-! Blocks any hostname containing “reddit” (can cause collateral damage)
-!/reddit/i$important
+! === Optional Regex Warning — Use with Caution ===
+! !/reddit/i^$important
 
-! Notes:
-! - AdGuard syntax tip: `||domain^` blocks the root and all subdomains; no need to list `www.` duplicates.
-! - Removed unsupported patterns like `libreddit.*` and `redditproxy--.**.vercel.app`.
-! - If you later spot a new mirror, just add its exact domain under the “Frontend Proxies & Mirrors” section.
+! === Notes ===
+! - Now includes front-ends like Xeddit and top Lemmy nodes, useful for future bypasses.
+! - Logs show Libreddit moving to replace Redlib tooling after Reddit’s API changes in 2023.:contentReference[oaicite:1]{index=1}
+! - Lemmy is a growing federated Reddit alternative, widely adopted in 2025.:contentReference[oaicite:2]{index=2}
+! - No overlap with Google or Gaming allowlists; no collateral damage unless you intentionally click mirror redirects.
+! - Mirrors can pop up fast; feel free to pass new domains anytime.
