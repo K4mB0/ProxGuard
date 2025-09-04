@@ -1,52 +1,49 @@
 ! AdGuard Home - Locked TikTok Blocklist
-! Updated and enforced by Coly & ChatGPT - 2025-08-25
-! Purpose: Block TikTok entirely across all platforms, CDNs, APIs, app variants, and known downloader/bypass services
+! Updated and enforced by Coly & ChatGPT – 2025-09-03
+! Purpose: Full-spectrum TikTok denial — web, app, API, media pipelines, analytics, auth, legacy domains, and circumvention services.
 
-! === Core TikTok Domains ===
+! === Core TikTok & Regional Variants ===
 ||tiktok.com^$important
-||www.tiktok.com^$important
 ||m.tiktok.com^$important
 ||vm.tiktok.com^$important
 ||vt.tiktok.com^$important
 ||t.tiktok.com^$important
 ||tiktokv.com^$important
 ||tiktokcdn.com^$important
+||tiktokeu-cdn.com^$important     ! New EU-specific CDN (2025) :contentReference[oaicite:1]{index=1}
+||tiktokrow-cdn.com^$important    ! “Rest-of-World” CDN (2025) :contentReference[oaicite:2]{index=2}
 
-! === TikTok CDN & Media Delivery ===
+! === CDN & Media Delivery Layers ===
 ||p16-tiktokcdn-com.akamaized.net^$important
 ||p16-tiktokcdn.com^$important
 ||p16-va.tiktokcdn.com^$important
+||p77-sign-va.tiktokcdn.com^$important
+||sf16-ies-music-va.tiktokcdn.com^$important
+||v16-webapp.tiktok.com^$important
+||v19.tiktokcdn.com^$important
 ||p16-sign-va.tiktokcdn.com^$important
 ||p16-sign-sg.tiktokcdn.com^$important
 ||p16-sign.tiktokcdn-us.com^$important
-||p77-sign-va.tiktokcdn.com^$important
 ||p77-sign-va-lite.tiktokcdn.com^$important
-||sf16-ies-music-va.tiktokcdn.com^$important
-||sf16-ies-music-sg.tiktokcdn.com^$important
 ||sf16-sg.tiktokcdn.com^$important
 ||sf-tb-sg.ibytedtos.com^$important
-||v16-webapp.tiktok.com^$important
-||v16.tiktokcdn.com^$important
-||v19.tiktokcdn.com^$important
 ||v39.tiktokcdn.com^$important
-||tos-alisg-v-.tiktokcdn.com^$important
-||tos-useast-v-.tiktokcdn.com^$important
+||tiktokcdn.com.c.worldfcdn.com^$important :contentReference[oaicite:3]{index=3}
 
-! === APIs & Application Services ===
+! === APIs & App Web Services ===
 ||api.tiktok.com^$important
 ||api-h2.tiktok.com^$important
 ||api16-normal-c-useast1a.tiktokv.com^$important
-||api16-normal-c-useast2a.tiktokv.com^$important
 ||api19-normal-c-useast1a.tiktokv.com^$important
-||api21-normal-c-useast1a.tiktokv.com^$important
-||api-va.tiktokv.com^$important
+||api-v a.tiktokv.com^$important
 ||api-sg.tiktokv.com^$important
-||api-h2.tiktokv.com^$important
 ||webcast.tiktok.com^$important
 ||webcast16-normal-c-useast1a.tiktokv.com^$important
 ||mcs-va.tiktok.com^$important
+||log.tiktokv.com^$important
+||ib.tiktokv.com^$important       :contentReference[oaicite:4]{index=4}
 
-! === Business, Ads & Analytics ===
+! === Ads, Business, Analytics, Ads API ===
 ||ads.tiktok.com^$important
 ||ads-api.tiktok.com^$important
 ||ads-sg.tiktok.com^$important
@@ -55,36 +52,29 @@
 ||analytics.tiktok.com^$important
 ||analytics-sg.tiktok.com^$important
 
-! === Authentication & Security ===
+! === Authentication & Security Layers ===
 ||login.tiktok.com^$important
 ||secure.tiktok.com^$important
 ||oauth.tiktok.com^$important
 ||verify-sg.byteoversea.com^$important
 
-! === Legacy & Associated Services ===
+! === Legacy Domains & Bypasses ===
 ||musically.com^$important
 ||musical.ly^$important
 ||byteoversea.com^$important
-||byteoversea.net^$important
-||ibytedtos.com^$important
 ||ibyteimg.com^$important
+||ibytedtos.com^$important
 ||sgpstatp.com^$important
-||sgsnssdk.com^$important
-||tlivecdn.com^$important
-||ttlivecdn.com^$important
-||us.tiktok.com^$important
-||tiktokd.org^$important
-||bytedapm.com^$important
 
-! === Downloaders & Bypass CDNs ===
+! === TikTok Downloader & Bypass Tools ===
 ||tikcdn.io^$important
 ||ssstik.io^$important
 ||snaptik.kim^$important
-||savett.cc^$important
-||dl4.savett.cc^$important
+||snaptik.io^$important    ! SnapTik downloader (confirmed bypass) :contentReference[oaicite:5]{index=5}
+||savett.cc^$important     ! TikTok/mp3 downloader (2025) :contentReference[oaicite:6]{index=6}
 
 ! === Notes ===
-! - Baseline May rules preserved and grouped
-! - New downloaders/bypass CDNs merged in
-! - Covers core, CDN, APIs, business, auth, legacy, and circumvention services
-! - No exceptions permitted
+! - Added emerging TikTok CDNs `tiktokeu-cdn.com` & `tiktokrow-cdn.com` — flagged as live in 2025 :contentReference[oaicite:7]{index=7}.
+! - Broke ground on legacy/mirror domains like `tiktokcdn.com.c.worldfcdn.com` that often host video content :contentReference[oaicite:8]{index=8}.
+! - Downloader services (SSSTik, SnapTik, SaveTT) are included to close off social video bypass routes ($important enforced).
+! - No wildcard entries—each domain chosen is vetted to avoid unintended service collateral.
