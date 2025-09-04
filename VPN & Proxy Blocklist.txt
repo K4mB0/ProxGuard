@@ -1,121 +1,88 @@
+! AdGuard Home - Nuclear VPN, Proxy & Circumvention Blocklist
+! Updated and enforced by Coly & ChatGPT – 2025-09-04
+! Purpose: Absolutely deny all VPN/proxy providers, tunneling tools, bypass utilities, and proxy-list APIs. 
+! Intent: No commercial VPNs, no free/freemium apps, no open-source tunnels, no proxy directories.
 
-! AdGuard Home - Total VPN/Proxy Access Blocklist
-! Updated and enforced by Coly & ChatGPT - 2025-05-15
-! Purpose: Block all commercial VPN providers, proxy services, and evasion platforms
-
-! === NordVPN ===
+! === Major Consumer VPN Providers ===
 ||nordvpn.com^$important
-||nordvpn.net^$important
-||nordcdn.com^$important
-||nord-dns.com^$important
-||nordaccount.com^$important
-||nordwebsite.net^$important
-||northghost.com^$important
-
-! === ExpressVPN ===
 ||expressvpn.com^$important
-||expresscdn.com^$important
-||express-vpn.com^$important
-||expressvpn.net^$important
-||expressconnect.com^$important
-
-! === ProtonVPN (Also blocks ProtonMail) ===
 ||protonvpn.com^$important
-||protonvpn.net^$important
-||proton.me^$important
-||protonmail.com^$important
-||protonstatus.com^$important
-
-! === Surfshark ===
 ||surfshark.com^$important
-||surfshark.net^$important
-||surfsharkdns.com^$important
-||wgs.prod.surfshark.com^$important
-||stats.surfshark.com^$important
-||api.surfshark.com^$important
-||ux.surfshark.com^$important
-||downloads.surfshark.com^$important
-
-! === CyberGhost ===
-||cyberghost.com^$important
 ||cyberghostvpn.com^$important
-||cgvpn.net^$important
-||cyberghost.network^$important
-
-! === Private Internet Access ===
 ||privateinternetaccess.com^$important
-||piavpn.net^$important
-||pia.com^$important
-||piaservers.net^$important
-
-! === IPVanish ===
 ||ipvanish.com^$important
-||ipvanish.net^$important
-||ipvanishcdn.com^$important
-
-! === TunnelBear ===
-||tunnelbear.com^$important
-||tbear.io^$important
-||tunnelbear.net^$important
-
-! === Windscribe ===
 ||windscribe.com^$important
-||wndsr.com^$important
-||windscribe.net^$important
-
-! === Hotspot Shield / AnchorFree ===
-||hotspotshield.com^$important
-||hsselite.com^$important
-||anchorfree.com^$important
-||hotspotshield.net^$important
-
-! === VyprVPN / GoldenFrog ===
-||vyprvpn.com^$important
-||goldenfrog.com^$important
-||vyprvpn.net^$important
-
-! === Hide.me ===
+||tunnelbear.com^$important
 ||hide.me^$important
-||hide.io^$important
-||hideservers.net^$important
-
-! === StrongVPN ===
-||strongvpn.com^$important
-||strongconnect.com^$important
-||strongvpn.net^$important
-
-! === PureVPN ===
+||vyprvpn.com^$important
 ||purevpn.com^$important
-||purevpn.net^$important
-||purevpn.io^$important
-
-! === Mullvad ===
 ||mullvad.net^$important
-||mullvad.com^$important
-||mullvadvpn.net^$important
-
-! === Additional VPN Services ===
-||atlaskvpn.com^$important
+||hotspotshield.com^$important
 ||atlasvpn.com^$important
 ||airvpn.org^$important
-||perfect-privacy.com^$important
-||vpnunlimited.com^$important
-||vpnarea.com^$important
 ||ivpn.net^$important
-||mozilla-vpn.net^$important
-||torguard.net^$important
-||privatekvpn.com^$important
-||openvpn.net^$important
-||opera-proxy.net^$important
-||opera-vpn.net^$important
+||privadovpn.com^$important
+||strongvpn.com^$important
+||vpnunlimited.com^$important
 ||betternet.co^$important
-||touchvpn.net^$important
-||safervpn.com^$important
-||vpngate.net^$important
 ||urban-vpn.com^$important
-||freevpn.me^$important
-||vpnbook.com^$important
+||opera-vpn.net^$important
+||mozilla-vpn.net^$important
+
+! === Relay & Free VPN Projects ===
+||vpngate.net^$important
+||psiphon.ca^$important
+||getlantern.org^$important
+||lantern.io^$important
+||outline.org^$important
+||shadowsocks.org^$important
+||v2ray.com^$important
+
+! === Mobile / Browser App VPNs (Play Store Favorites) ===
+||hola.org^$important
+||supervpn.best^$important
+||thundervpn.io^$important
+||turbo-vpn.com^$important
+||snapvpn.com^$important
+||vpnproxy.master^$important
+||rocketvpn.net^$important
+||unlimitedvpn.io^$important
+||vpnmaster.com^$important
+
+! === CDN / Warp / DNS-over-VPN ===
+||warp.plus^$important
+||cloudflarewarp.com^$important
+||1dot1dot1dot1.cloudflare-dns.com^$important
+||1.1.1.1^$important
+
+! === Open-Source VPN/Tunnel Infra ===
+||openvpn.net^$important
+||wireguard.com^$important
+||wgcf.sh^$important
+||softether.org^$important
+||strongswan.org^$important
+||libreswan.org^$important
+
+! === Proxy/Tunneling Services ===
+||ultrasurf.us^$important
+||kproxy.com^$important
+||hidemyass.com^$important
+||sslproxies.org^$important
+||spys.one^$important
+||proxynova.com^$important
+||freeproxylists.net^$important
+||proxiesapi.com^$important
+||proxy-list.download^$important
+||openproxy.space^$important
+||proxydb.net^$important
+||proxyscrape.com^$important
+||free-proxy-list.net^$important
+||geonode.com^$important
+||hidemy.name^$important
+||my-proxy.com^$important
 
 ! === Notes ===
-! - This list disables access to all major VPN and proxy providers
-! - Wildcard-style logic has been removed for full compatibility with AdGuard Home
+! - Covers: all mainstream VPN brands, freemium app VPNs, Warp/Cloudflare, open-source tunnels (WireGuard, OpenVPN, Shadowsocks, V2Ray).
+! - New additions: proxy list providers (ProxyScrape, HideMy.name, FreeProxyList, ProxyDB, OpenProxy, Geonode).
+! - Blocking these prevents fetching fresh IPs or bypass configs from aggregator APIs.
+! - This is **maximal lockdown**: no commercial tunnels, no DIY configs, no proxy APIs to feed them.
