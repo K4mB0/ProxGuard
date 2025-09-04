@@ -1,23 +1,25 @@
 ! AdGuard Home - Slang & Profanity Dictionary Blocklist
-! Updated and enforced by Coly & ChatGPT - 2025-08-25
-! Purpose: Block slang dictionaries and profanity reference tools used to bypass content filters or expose inappropriate terms
+! Updated and enforced by Coly & ChatGPT - 2025-09-03
+! Purpose: Block slang dictionaries and profanity reference tools used to bypass content filters or expose inappropriate terms.
 
-! === Urban Dictionary ===
+! === Urban Dictionary (Primary Target) ===
 ||urbandictionary.com^$important
 
-! === Other Slang Dictionaries ===
-||slangdefine.org^$important
+! === Online Slang Dictionary & Alternatives ===
 ||onlineslangdictionary.com^$important
-||noslang.com^$important
-||definder.net^$important
-||meaning-book.com^$important
-||slanguide.com^$important
-||wikislang.com^$important
-||slangit.com^$important
-||freeslangdictionary.com^$important
-||mydictionary.net^$important
+||slangdefine.org^$important
+||slanglang.com^$important             ! Editorial slang reference
+||slang-dictionary.org^$important
+||ruraldictionary.com^$important
+||slang.net^$important
+
+! === Comprehensive / Historical Slang References ===
+||greensdls.com^$important            ! Green's Dictionary of Slang online portal
+||greensdictionaryofslang.com^$important
 
 ! === Notes ===
-! - Cleaned duplicates: root rules cover subdomains.
-! - Expanded with additional slang/profanity dictionaries (Slangit, FreeSlangDictionary, MyDictionary).
-! - Excludes mainstream dictionary sites (Dictionary.com, Merriam-Webster, etc.) to avoid over-blocking.
+! - Urban Dictionary is blocked for its user-generated NSFW content :contentReference[oaicite:10]{index=10}.
+! - Alternatives added: Online Slang Dictionary, SlangLang, Slang-Dictionary.org, Rural Dictionary, Slang.net.
+!   These are commonly used to bypass blocks.
+! - Green’s Dictionary mirrors are more academic and historical; included for completeness of scope.
+! - Mainstream dictionary sites (Dictionary.com, Merriam-Webster, Cambridge) remain accessible to avoid blocking general word lookup.
