@@ -1,8 +1,10 @@
 ! AdGuard Home - Locked P2P, Torrent & Anonymity Network Blocklist
-! Updated and enforced by Coly & ChatGPT - 2025-08-25
-! Purpose: Block torrent indexing, trackers, P2P clients, Tor and similar anonymity network infrastructures
+! Updated and enforced by Coly & ChatGPT - 2025-09-03
+! Purpose: Block torrent indexing sites, trackers, P2P clients, anonymity networks, and shadow library portals.
 
 ! === Major Torrent Indexing & Streaming Sites ===
+||tiktokblocksite (unchanged)...
+
 ||1337x.to^$important
 ||thepiratebay.org^$important
 ||rarbg.to^$important
@@ -18,6 +20,8 @@
 ||torrentgalaxy.to^$important
 ||torrenting.com^$important
 ||xbt.it^$important
+||ytt123.cc^$important             ! Rising in popularity, mirrors major index sites
+||yggtorrent.top^$important       ! French tracker, frequently shifts TLDs :contentReference[oaicite:1]{index=1}
 
 ! === Additional Torrent Platforms & Mirrors ===
 ||bitsnoop.com^$important
@@ -43,6 +47,7 @@
 ||bayproxy.me^$important
 ||tparser.org^$important
 ||ahoy.one^$important
+||fitgirl-repacks.net^$important  ! Frequently listed for repack downloads :contentReference[oaicite:2]{index=2}
 
 ! === Torrent Trackers & Public Infrastructure ===
 ||router.bittorrent.com^$important
@@ -81,6 +86,7 @@
 ||status.torproject.org^$important
 ||atlas.torproject.org^$important
 ||onionoo.torproject.org^$important
+||onionservices.torproject.org^$important  ! New Tor documentation platform :contentReference[oaicite:3]{index=3}
 
 ! === Alternative Anonymity Networks ===
 ||i2p.net^$important
@@ -88,9 +94,15 @@
 ||geti2p.net^$important
 ||freenetproject.org^$important
 ||getfreenet.org^$important
+||zeronet.io^$important             ! Decentralized P2P web system often paired with anonymity
+
+! === Shadow Library & Search Portals ===
+||annas-archive.li^$important      ! Shadow library aggregator (LibGen / Sci-Hub) :contentReference[oaicite:4]{index=4}
+||annas-archive.se^$important
+||annas-archive.org^$important
 
 ! === Notes ===
-! - Slimmed redundant 'www.' domains; root-level blocking covers subdomains.
-! - Added recent torrent sites and more public trackers.
-! - Included alternative anonymity networks (I2P and Freenet) beyond Tor.
-! - Covers both indexing, client software, and network evasion infrastructure.
+- Added emerging indexers: YGGtorrent and Anna’s Archive.
+- Tor official sub-services and fresh documentation URL `onionservices.torproject.org` now included.
+- `zeronet.io` included for completeness of anonymity network coverage.
+- List retains slimmed syntax—no 'www.', structured per category for auditability.
