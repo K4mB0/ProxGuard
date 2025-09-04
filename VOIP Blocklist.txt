@@ -1,43 +1,54 @@
 ! AdGuard Home - VoIP & Virtual Number Providers Blocklist
-! Updated by Coly & ChatGPT - 2025-08-25
-! Purpose: Fully block VoIP platforms and virtual number providers used for anonymous comms or phone verification bypass
+! Updated and enforced by Coly & ChatGPT – 2025-09-04
+! Purpose: Fully block VoIP platforms and virtual-number providers used for anonymous comms or phone/SMS verification bypass.
 
-! === Core VoIP Providers ===
-||zadarma.com^$important
-||nextiva.com^$important
-||callhippo.com^$important
-||vonage.com^$important
-||ringcentral.com^$important
-||8x8.com^$important
-||dialpad.com^$important
-||aircall.io^$important
-||cloudtalk.io^$important
-||placetel.de^$important
-||voicehost.co.uk^$important
+! === CPaaS / Programmable Voice & SMS (high-impact) ===
+||twilio.com^$important
+||telnyx.com^$important
+||plivo.com^$important
+||messagebird.com^$important
+||sinch.com^$important
+||infobip.com^$important
+||telesign.com^$important
+||bandwidth.com^$important
+||vonage.com^$important         # Nexmo brand now Vonage
+
+! === SIP Trunking / DID Providers ===
+||flowroute.com^$important
+||didww.com^$important
 ||voip.ms^$important
 ||voipstudio.com^$important
-||twilio.com^$important
-||openphone.co^$important
+||callcentric.com^$important
 ||ringover.com^$important
+||openphone.co^$important
+||aircall.io^$important
+||cloudtalk.io^$important
+||dialpad.com^$important
+||ringcentral.com^$important
+||8x8.com^$important
+||ooma.com^$important
+||broadvoice.com^$important
+||nextiva.com^$important
+||zadarma.com^$important
+||servetel.in^$important
+||exotel.com^$important
 ||unitedworldtelecom.com^$important
 ||globalcallforwarding.com^$important
 ||cebodtelecom.com^$important
-||servetel.in^$important
-||dialerhq.com^$important
-||exotel.com^$important
-||broadvoice.com^$important
-||ooma.com^$important
-||telnyx.com^$important  ; new: high-volume VoIP provider with DDoS history :contentReference[oaicite:7]{index=7}
+||placetel.de^$important
+||voicehost.co.uk^$important
 
-! === Robocall-Linked / FTC-Flagged Providers ===
-||xcastlabs.com^$important  ; provider sued by FTC for enabling scam robocalls :contentReference[oaicite:8]{index=8}
+! === Virtual Number / Privacy Apps (bypass risk) ===
+||mysudo.com^$important
+||silent.link^$important
 
-! === Virtual Numbers & Privacy VoIP / Billing Bypass ===
-||mysudo.com^$important     ; privacy-focused VoIP/SMS app noted in forums :contentReference[oaicite:9]{index=9}
-||silent.link^$important   ; similar category as MySudo :contentReference[oaicite:10]{index=10}
+! === Robocall-Linked / Enforcement Actions ===
+||xcastlabs.com^$important
 
 ! === Notes ===
-! - Removed wildcard `*.domain` patterns—they're unnecessary.
-! - Added telnyx.com, mysudo.com, silent.link, and xcastlabs.com based on recent intel.
-! - VoIP numbers are a widely abused verification bypass vector; blocking is critical. :contentReference[oaicite:11]{index=11}
-! - Pair with SMS bypass filter for full coverage.
+! - “Google Voice” is intentionally NOT listed to avoid breaking core Google allowlists.
+! - Telnyx included as a major VoIP carrier/CPaaS target (noted for prior DDoS campaigns). :contentReference[oaicite:0]{index=0}
+! - XCast Labs was sanctioned by the FTC for enabling illegal robocalls—explicitly blocked. :contentReference[oaicite:1]{index=1}
+! - MySudo and Silent.link provide privacy numbers/eSIM with minimal KYC; common in verification bypass guides. :contentReference[oaicite:2]{index=2}
+! - DID/SIP trunks (Flowroute, DIDWW, Plivo, Bandwidth, etc.) are included to cut off “bring-your-own-number” routes. :contentReference[oaicite:3]{index=3}
+! - Keep paired with your SMS Verification Bypass list for full coverage of disposable/receive-SMS sites.
