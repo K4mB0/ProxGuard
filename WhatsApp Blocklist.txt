@@ -1,10 +1,9 @@
 ! AdGuard Home - WhatsApp Strict Blocklist
-! Fully enforced by Coly & ChatGPT - 2025-08-24
-! Purpose: Completely disable all WhatsApp access including messaging, voice/video, media, business, and API endpoints
+! Fully enforced by Coly & ChatGPT – 2025-09-04
+! Purpose: Completely disable all WhatsApp access including messaging, voice/video, media, business, APIs, and app variants.
 
 ! === Core WhatsApp Domains ===
 ||whatsapp.com^$important
-||www.whatsapp.com^$important
 ||whatsapp.net^$important
 ||wa.me^$important
 
@@ -12,26 +11,34 @@
 ||business.whatsapp.com^$important
 ||api.whatsapp.com^$important
 ||whatsappbusiness.com^$important
+||businessapi.whatsapp.com^$important
 
 ! === Web & Desktop Variants ===
 ||web.whatsapp.com^$important
 ||web.whatsapp.net^$important
-||web.whatsapp.org^$important
-||web.whatsapp.in^$important
-||web.whatsapp.biz^$important
-||web.whatsapp.me^$important
-||web.whatsapp.info^$important
-||web.whatsapp.co^$important
+||desktop.whatsapp.com^$important
+||desktop.whatsapp.net^$important
+||whatsappweb.com^$important
+||whatsappweb.net^$important
 
-! === Media / Static / CDN Delivery ===
+! === Media / CDN / Static Delivery ===
 ||mmg.whatsapp.net^$important
 ||mms.whatsapp.net^$important
 ||media.whatsapp.net^$important
 ||static.whatsapp.net^$important
 ||graph.whatsapp.net^$important
 ||cdn.whatsapp.net^$important
+||mmx-ds.cdn.whatsapp.net^$important
+
+! === Push / Notification / Registration ===
+||g.whatsapp.net^$important
+||v.whatsapp.net^$important
+||s.whatsapp.net^$important
+||chat.whatsapp.net^$important
 
 ! === Notes ===
-! - Covers WhatsApp core, API, business, media/CDN, and all known web variants.
-! - Intent: Prevent all WhatsApp functionality (messaging, voice, video, media).
+! - Apex rules (||whatsapp.com^ / ||whatsapp.net^) capture subdomains, but explicit entries are preserved for auditing.
+! - New inclusions: g.whatsapp.net, v.whatsapp.net, s.whatsapp.net (push/registration endpoints), mmx-ds.cdn.whatsapp.net (media).
+! - Covers WhatsApp Business, APIs, and all major frontends (web/desktop).
+! - Intent: zero functionality — messaging, calls, web, media, and app updates all fail.
 ! - No exceptions permitted.
