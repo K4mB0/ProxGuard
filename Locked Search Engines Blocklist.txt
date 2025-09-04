@@ -1,0 +1,64 @@
+! AdGuard Home - Search Engines Blocklist (Strict Google-Only)
+! Updated and enforced by Coly & ChatGPT – 2025-09-03
+! Purpose: Block all search engines and frontends except Google Search (SafeSearch enforced separately).
+
+! === Microsoft Bing ===
+||bing.com^$important
+||api.bing.com^$important
+||cn.bing.com^$important
+
+! === Yahoo ===
+||yahoo.com^$important
+||search.yahoo.com^$important
+||yahoo.co.jp^$important
+
+! === DuckDuckGo ===
+||duckduckgo.com^$important
+||duck.com^$important
+||ddg.gg^$important
+
+! === Startpage / Ixquick ===
+||startpage.com^$important
+||ixquick.com^$important
+
+! === Brave Search ===
+||search.brave.com^$important
+||brave.com^$important
+
+! === Qwant ===
+||qwant.com^$important
+
+! === Swisscows ===
+||swisscows.com^$important
+
+! === Ecosia ===
+||ecosia.org^$important
+
+! === Yandex ===
+||yandex.com^$important
+||yandex.ru^$important
+
+! === Baidu ===
+||baidu.com^$important
+
+! === Other International / Regional Engines ===
+||ask.com^$important
+||lycos.com^$important
+||naver.com^$important
+||seznam.cz^$important
+||so.com^$important
+||sogou.com^$important
+||daum.net^$important
+
+! === Alt-Frontends & Meta Search ===
+||searx.be^$important
+||searxng.site^$important
+||searx.tiekoetter.com^$important
+||whoogle.xyz^$important
+||librex.me^$important
+||librex.be^$important
+
+! === Notes ===
+! - Google allowlist remains the only search path (already handled in Google services allowlist).
+! - SafeSearch must still be enforced in AdGuard Home to filter explicit content.
+! - No overlap with gaming allowlists.
