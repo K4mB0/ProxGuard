@@ -10,6 +10,10 @@
 ||ogads.com^$important
 ||ad-maven.com^$important
 
+||linktr.ee^$important
+||ugc.production.linktr.ee^$important
+||assets.production.linktr.ee^$important
+
 ! === Content Locker Bypass Services ===
 ||bypass.city^$important
 
@@ -31,6 +35,8 @@
 ! ||cutt.ly^$important
 ! ||is.gd^$important
 ! ||t.co^$important
+
+
 
 ! === Notes ===
 ! - **Active**: Only high-risk lockers and bypassers are enabled.
