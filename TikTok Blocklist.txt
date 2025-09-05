@@ -67,6 +67,9 @@
 ||sgpstatp.com^$important
 
 ! === TikTok Downloader & Bypass Tools ===
+||tiktokcdn-eu.com^$important
+||tiktokcdn-us.com^$important
+||tiktokcdn.com^$important
 ||tikcdn.io^$important
 ||ssstik.io^$important
 ||snaptik.kim^$important
