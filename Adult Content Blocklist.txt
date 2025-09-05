@@ -110,6 +110,7 @@
 ||danbooru.donmai.us^$important
 ||e621.net^$important
 ||sankakucomplex.com^$important
+||yiffit.net^$important
 
 ! === VR / Immersive Adult Platforms ===
 ||sexlikereal.com^$important
